@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">EDPNGO</string>
+    <string name="profile">Profile</string>
+    <string name="volunteer">Volunteer</string>
+    <string name="contact_us">Contact us</string>
+    <string name="about_us">About us</string>
+    <string name="edp_ngo">EDP NGO</string>
+    <string name="open">OPEN</string>
+    <string name="close">CLOSE</string>
 </resources>
