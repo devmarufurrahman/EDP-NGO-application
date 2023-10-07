@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         // Navagation Drawar------------------------------
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.nav_View);
@@ -82,6 +83,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        // ------------------------
+        // Navigation drawer ended ------------------------
     }
 }
