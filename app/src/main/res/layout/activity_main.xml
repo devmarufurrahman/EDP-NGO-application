@@ -68,36 +68,47 @@
 
         <FrameLayout
             android:layout_below="@+id/appBar"
+            android:layout_above="@+id/bottomLinear"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/fragmentContainer"
             />
-        
-        <androidx.coordinatorlayout.widget.CoordinatorLayout
+
+        <LinearLayout
+            android:id="@+id/bottomLinear"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
             >
-            <com.google.android.material.bottomappbar.BottomAppBar
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/bottomAppbar"
-                android:layout_gravity="bottom"
-                app:fabCradleRoundedCornerRadius="50dp"
+                android:layout_height="match_parent"
+
                 >
-                <com.google.android.material.bottomnavigation.BottomNavigationView
-                    android:layout_width="wrap_content"
+                <com.google.android.material.bottomappbar.BottomAppBar
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/bottomNavigation"
-                    app:labelVisibilityMode="labeled"
-                    app:menu="@menu/bottom_navigation_view"
-                    android:backgroundTint="?attr/colorSecondary"
-                    />
+                    android:id="@+id/bottomAppbar"
+                    android:layout_gravity="bottom"
+                    app:fabCradleRoundedCornerRadius="50dp"
+                    >
+                    <com.google.android.material.bottomnavigation.BottomNavigationView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/bottomNavigation"
+                        app:labelVisibilityMode="labeled"
+                        app:menu="@menu/bottom_navigation_view"
+                        android:backgroundTint="?attr/colorSecondary"
+                        />
 
-            </com.google.android.material.bottomappbar.BottomAppBar>
+                </com.google.android.material.bottomappbar.BottomAppBar>
 
 
 
-        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        </LinearLayout>
+
 
     </RelativeLayout>
 

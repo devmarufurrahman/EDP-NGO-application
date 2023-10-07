@@ -200,6 +200,378 @@
             </HorizontalScrollView>
 
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:layout_marginBottom="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="News and Events"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/feature_post_shape"
+                    android:orientation="vertical"
+                    android:elevation="5dp"
+                    android:layout_margin="5dp"
+                    >
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/feature_image1"
+                        app:shapeAppearance="@style/UpperImgRound"
+                        />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:text="Monk Surrounded by Children"
+                        android:padding="3dp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="Hello Everyone, Good News for USA citizens. Empowering Development Project Inc. promotes cooking training opportunity for cook lovers named Culinary Training Workshop. So why late? Join our workshop. Hope you will enjoy our session. "
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Recent Donate"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:padding="5dp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/person_pin_icon"
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/person_pin_icon"
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/person_pin_icon"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:text="+7 Donated"
+                            android:textStyle="bold"
+                            />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_margin="3dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/donate"
+                        android:backgroundTint="@color/orangeDark"
+                        android:layout_gravity="center"
+                        android:elevation="3dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/feature_post_shape"
+                    android:orientation="vertical"
+                    android:elevation="5dp"
+                    android:layout_margin="5dp"
+                    >
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/feature_image1"
+                        app:shapeAppearance="@style/UpperImgRound"
+                        />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:text="Monk Surrounded by Children"
+                        android:padding="3dp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="Hello Everyone, Good News for USA citizens. Empowering Development Project Inc. promotes cooking training opportunity for cook lovers named Culinary Training Workshop. So why late? Join our workshop. Hope you will enjoy our session. "
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Recent Donate"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:padding="5dp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/person_pin_icon"
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/person_pin_icon"
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/person_pin_icon"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:text="+7 Donated"
+                            android:textStyle="bold"
+                            />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_margin="3dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/donate"
+                        android:backgroundTint="@color/orangeDark"
+                        android:layout_gravity="center"
+                        android:elevation="3dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/feature_post_shape"
+                    android:orientation="vertical"
+                    android:elevation="5dp"
+                    android:layout_margin="5dp"
+                    >
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/feature_image1"
+                        app:shapeAppearance="@style/UpperImgRound"
+                        />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:text="Monk Surrounded by Children"
+                        android:padding="3dp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="Hello Everyone, Good News for USA citizens. Empowering Development Project Inc. promotes cooking training opportunity for cook lovers named Culinary Training Workshop. So why late? Join our workshop. Hope you will enjoy our session. "
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Recent Donate"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:padding="5dp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/person_pin_icon"
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/person_pin_icon"
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/person_pin_icon"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:text="+7 Donated"
+                            android:textStyle="bold"
+                            />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_margin="3dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/donate"
+                        android:backgroundTint="@color/orangeDark"
+                        android:layout_gravity="center"
+                        android:elevation="3dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/feature_post_shape"
+                    android:orientation="vertical"
+                    android:elevation="5dp"
+                    android:layout_margin="5dp"
+                    >
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/feature_image1"
+                        app:shapeAppearance="@style/UpperImgRound"
+                        />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:text="Monk Surrounded by Children"
+                        android:padding="3dp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="Hello Everyone, Good News for USA citizens. Empowering Development Project Inc. promotes cooking training opportunity for cook lovers named Culinary Training Workshop. So why late? Join our workshop. Hope you will enjoy our session. "
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Recent Donate"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:padding="5dp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/person_pin_icon"
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/person_pin_icon"
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/person_pin_icon"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:text="+7 Donated"
+                            android:textStyle="bold"
+                            />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_margin="3dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/donate"
+                        android:backgroundTint="@color/orangeDark"
+                        android:layout_gravity="center"
+                        android:elevation="3dp"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
 
         </LinearLayout>
     </ScrollView>
