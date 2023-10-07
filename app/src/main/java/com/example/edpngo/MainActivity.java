@@ -5,6 +5,9 @@ import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
 import android.view.Gravity;
@@ -13,6 +16,15 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.example.edpngo.fragment.AboutFragment;
+import com.example.edpngo.fragment.ContactFragment;
+import com.example.edpngo.fragment.DonateFragment;
+import com.example.edpngo.fragment.HomeFragment;
+import com.example.edpngo.fragment.ProfileFragment;
+import com.example.edpngo.fragment.ProjectFragment;
+import com.example.edpngo.fragment.VolunteerFragment;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationBarView;
 import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity {
@@ -22,10 +34,39 @@ public class MainActivity extends AppCompatActivity {
     ActionBarDrawerToggle toggle;
     ImageView imageMenu;
 
+    BottomNavigationView bottomNavigationView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // Bottom Navigation view start ===========================
+        bottomNavigationView = findViewById(R.id.bottomNavigation);
+        bottomNavigationView.setBackground(null);
+
+        bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                int id = item.getItemId();
+                if (id == R.id.navHome){
+                    openFragment(new HomeFragment());
+                } else if (id == R.id.navDonate) {
+                    openFragment(new DonateFragment());
+                } else if (id == R.id.navProject) {
+                    openFragment(new ProjectFragment());
+                } else {
+                    Toast.makeText(MainActivity.this, "Gallery", Toast.LENGTH_SHORT).show();
+                }
+
+                return true;
+            }
+        });
+
+        openFragment(new HomeFragment());
+
+        // Bottom Navigation view end ===========================
+
 
         // Navagation Drawar------------------------------
         drawerLayout = findViewById(R.id.drawer_layout);
@@ -49,15 +90,20 @@ public class MainActivity extends AppCompatActivity {
                 if (id == R.id.navProfile){
                     // profile menu
 
+                    openFragment(new ProfileFragment());
+
                     Toast.makeText(MainActivity.this, "profile menu", Toast.LENGTH_SHORT).show();
                 } else if(id == R.id.navVolunteer){
                     // volunteer menu
+                    openFragment(new VolunteerFragment());
                     Toast.makeText(MainActivity.this, "volunteer menu", Toast.LENGTH_SHORT).show();
                 }else if(id == R.id.navAbout){
                     // about menu
+                    openFragment(new AboutFragment());
                     Toast.makeText(MainActivity.this, "about menu", Toast.LENGTH_SHORT).show();
                 } else if(id == R.id.navContact){
                     // contact menu
+                    openFragment(new ContactFragment());
                     Toast.makeText(MainActivity.this, "contact menu", Toast.LENGTH_SHORT).show();
                 } else {
                     // logout
@@ -84,5 +130,13 @@ public class MainActivity extends AppCompatActivity {
 
 
         // Navigation drawer ended ------------------------
+    }
+
+
+    private void openFragment(Fragment fragment){
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.fragmentContainer,fragment);
+        fragmentTransaction.commit();
     }
 }

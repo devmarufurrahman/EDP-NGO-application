@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navHome"
+        android:title="Home"
+        android:icon="@drawable/home_icon"
+        />
+
+    <item
+        android:id="@+id/navDonate"
+        android:title="Donate"
+        android:icon="@drawable/baseline_account_balance_24"
+        />
+
+    <item
+        android:id="@+id/navProject"
+        android:title="Project"
+        android:icon="@drawable/projects_icon"
+        />
+
+    <item
+        android:id="@+id/navGallery"
+        android:title="Photo Gallery"
+        android:icon="@drawable/baseline_image_24"
+        />
+</menu>
