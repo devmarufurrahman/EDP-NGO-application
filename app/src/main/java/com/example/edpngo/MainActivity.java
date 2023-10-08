@@ -92,22 +92,21 @@ public class MainActivity extends AppCompatActivity {
 
                     openFragment(new ProfileFragment());
 
-                    Toast.makeText(MainActivity.this, "profile menu", Toast.LENGTH_SHORT).show();
                 } else if(id == R.id.navVolunteer){
                     // volunteer menu
                     openFragment(new VolunteerFragment());
-                    Toast.makeText(MainActivity.this, "volunteer menu", Toast.LENGTH_SHORT).show();
+
                 }else if(id == R.id.navAbout){
                     // about menu
                     openFragment(new AboutFragment());
-                    Toast.makeText(MainActivity.this, "about menu", Toast.LENGTH_SHORT).show();
+
                 } else if(id == R.id.navContact){
                     // contact menu
                     openFragment(new ContactFragment());
-                    Toast.makeText(MainActivity.this, "contact menu", Toast.LENGTH_SHORT).show();
+
                 } else {
                     // logout
-                    Toast.makeText(MainActivity.this, "logout menu", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "logout ", Toast.LENGTH_SHORT).show();
                 }
 
                 drawerLayout.closeDrawers();
