@@ -75,7 +75,7 @@
 
 <!--            Feature post -->
             <HorizontalScrollView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:scrollbars="none"
                 >
@@ -85,12 +85,13 @@
                     android:orientation="horizontal"
                     >
                     <LinearLayout
-                        android:layout_width="220dp"
+                        android:layout_width="230dp"
                         android:layout_height="wrap_content"
                         android:background="@drawable/feature_post_shape"
                         android:orientation="vertical"
                         android:elevation="4dp"
                         android:layout_margin="5dp"
+                        android:paddingBottom="10dp"
                         >
                         <com.google.android.material.imageview.ShapeableImageView
                             android:layout_width="match_parent"
@@ -108,26 +109,28 @@
                             android:textSize="16sp"
                             android:textStyle="bold"
                             android:text="Monk Surrounded by Children"
-                            android:padding="3dp"
+                            android:paddingLeft="10dp"
                             />
                         <Button
                             android:layout_width="match_parent"
-                            android:layout_margin="3dp"
+                            android:layout_marginHorizontal="10dp"
                             android:layout_height="wrap_content"
                             android:text="@string/donate"
-                            android:backgroundTint="@color/orangeDark"
                             android:layout_gravity="center"
+                            android:background="@drawable/button_shape"
+                            app:backgroundTint="@color/orangeDark"
                             />
 
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="220dp"
+                        android:layout_width="230dp"
                         android:layout_height="wrap_content"
                         android:background="@drawable/feature_post_shape"
                         android:orientation="vertical"
                         android:elevation="4dp"
                         android:layout_margin="5dp"
+                        android:paddingBottom="10dp"
                         >
                         <com.google.android.material.imageview.ShapeableImageView
                             android:layout_width="match_parent"
@@ -145,26 +148,28 @@
                             android:textSize="16sp"
                             android:textStyle="bold"
                             android:text="Monk Surrounded by Children"
-                            android:padding="3dp"
+                            android:paddingLeft="10dp"
                             />
                         <Button
                             android:layout_width="match_parent"
-                            android:layout_margin="3dp"
+                            android:layout_marginHorizontal="10dp"
                             android:layout_height="wrap_content"
                             android:text="@string/donate"
-                            android:backgroundTint="@color/orangeDark"
+                            app:backgroundTint="@color/orangeDark"
                             android:layout_gravity="center"
+                            android:background="@drawable/button_shape"
                             />
 
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="220dp"
+                        android:layout_width="230dp"
                         android:layout_height="wrap_content"
                         android:background="@drawable/feature_post_shape"
                         android:orientation="vertical"
                         android:elevation="4dp"
                         android:layout_margin="5dp"
+                        android:paddingBottom="10dp"
                         >
                         <com.google.android.material.imageview.ShapeableImageView
                             android:layout_width="match_parent"
@@ -182,15 +187,16 @@
                             android:textSize="16sp"
                             android:textStyle="bold"
                             android:text="Monk Surrounded by Children"
-                            android:padding="3dp"
+                            android:paddingLeft="10dp"
                             />
                         <Button
                             android:layout_width="match_parent"
-                            android:layout_margin="3dp"
+                            android:layout_marginHorizontal="10dp"
                             android:layout_height="wrap_content"
                             android:text="@string/donate"
-                            android:backgroundTint="@color/orangeDark"
+                            app:backgroundTint="@color/orangeDark"
                             android:layout_gravity="center"
+                            android:background="@drawable/button_shape"
                             />
 
                     </LinearLayout>
@@ -208,7 +214,7 @@
                 android:padding="2dp"
                 android:elevation="4dp"
                 android:background="@drawable/feature_post_shape"
-                android:layout_marginHorizontal="2dp"
+                android:layout_marginHorizontal="3dp"
                 android:layout_marginVertical="20dp"
                 >
                 <TextView
@@ -230,16 +236,14 @@
                     android:layout_marginBottom="3dp"
                     >
                     <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="100dp"
+                        android:layout_height="80dp"
                         android:orientation="vertical"
-                        android:background="@drawable/feature_post_shape"
+                        android:background="@drawable/donate_round_shape"
                         android:gravity="center"
                         android:layout_margin="5dp"
-                        android:elevation="3dp"
                         android:layout_weight="1"
                         android:paddingVertical="10dp"
-
                         >
                         <ImageView
                             android:layout_width="40dp"
@@ -250,7 +254,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/donate"
+                            android:text="Donate"
                             android:textStyle="bold"
                             android:textSize="15sp"
                             />
@@ -258,13 +262,12 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="100dp"
+                        android:layout_height="80dp"
                         android:orientation="vertical"
-                        android:background="@drawable/feature_post_shape"
+                        android:background="@drawable/donate_round_shape"
                         android:gravity="center"
                         android:layout_margin="5dp"
-                        android:elevation="3dp"
                         android:layout_weight="1"
                         android:paddingVertical="10dp"
                         >
@@ -277,7 +280,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/project"
+                            android:text="Project"
                             android:textStyle="bold"
                             android:textSize="15sp"
                             />
@@ -285,13 +288,12 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="100dp"
+                        android:layout_height="80dp"
                         android:orientation="vertical"
-                        android:background="@drawable/feature_post_shape"
+                        android:background="@drawable/donate_round_shape"
                         android:gravity="center"
                         android:layout_margin="5dp"
-                        android:elevation="3dp"
                         android:layout_weight="1"
                         android:paddingVertical="10dp"
                         >
@@ -304,7 +306,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/gallery"
+                            android:text="Gallery"
                             android:textStyle="bold"
                             android:textSize="15sp"
                             />
@@ -320,13 +322,12 @@
                     android:weightSum="3"
                     >
                     <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="100dp"
+                        android:layout_height="80dp"
                         android:orientation="vertical"
-                        android:background="@drawable/feature_post_shape"
+                        android:background="@drawable/donate_round_shape"
                         android:gravity="center"
                         android:layout_margin="5dp"
-                        android:elevation="3dp"
                         android:layout_weight="1"
                         android:paddingVertical="10dp"
 
@@ -340,7 +341,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/our_blogs"
+                            android:text="Our Blogs"
                             android:textStyle="bold"
                             android:textSize="15sp"
                             />
@@ -348,13 +349,12 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="100dp"
+                        android:layout_height="80dp"
                         android:orientation="vertical"
-                        android:background="@drawable/feature_post_shape"
+                        android:background="@drawable/donate_round_shape"
                         android:gravity="center"
                         android:layout_margin="5dp"
-                        android:elevation="3dp"
                         android:layout_weight="1"
                         android:paddingVertical="10dp"
                         >
@@ -375,13 +375,12 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="100dp"
+                        android:layout_height="80dp"
                         android:orientation="vertical"
-                        android:background="@drawable/feature_post_shape"
+                        android:background="@drawable/donate_round_shape"
                         android:gravity="center"
                         android:layout_margin="5dp"
-                        android:elevation="3dp"
                         android:layout_weight="1"
                         android:paddingVertical="10dp"
                         >
@@ -429,7 +428,8 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:background="@drawable/feature_post_shape"
-                    android:layout_margin="2dp"
+                    android:layout_marginHorizontal="4dp"
+                    android:layout_marginVertical="4dp"
                     android:elevation="4dp"
                     >
                     <LinearLayout
@@ -443,12 +443,10 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
                             android:gravity="center_vertical"
-                            android:elevation="3dp"
                             android:background="@drawable/donate_round_shape"
                             android:padding="6dp"
                             android:layout_margin="7dp"
                             android:layout_weight="1"
-                            android:weightSum="2"
                             >
                             <LinearLayout
                                 android:layout_width="wrap_content"
@@ -456,7 +454,6 @@
                                 android:orientation="vertical"
                                 android:gravity="center"
                                 android:layout_margin="5dp"
-                                android:layout_weight="1"
                                 >
                                 <ImageView
                                     android:layout_width="30dp"
@@ -476,14 +473,13 @@
                             </LinearLayout>
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:textSize="19sp"
+                                android:textSize="18sp"
                                 android:textStyle="bold"
                                 android:textColor="@color/black"
                                 android:text="0.00"
-                                android:layout_weight="1"
-                                android:gravity="right"
+                                android:gravity="end"
                                 />
 
                         </LinearLayout>
@@ -494,12 +490,10 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
                             android:gravity="center_vertical"
-                            android:elevation="3dp"
                             android:background="@drawable/donate_round_shape"
                             android:padding="6dp"
                             android:layout_margin="7dp"
                             android:layout_weight="1"
-                            android:weightSum="2"
                             >
                             <LinearLayout
                                 android:layout_width="wrap_content"
@@ -507,7 +501,6 @@
                                 android:orientation="vertical"
                                 android:gravity="center"
                                 android:layout_margin="5dp"
-                                android:layout_weight="1"
                                 >
                                 <ImageView
                                     android:layout_width="30dp"
@@ -519,7 +512,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="People Donate"
+                                    android:text="Total Donors"
                                     android:textColor="@color/black"
                                     android:textStyle="bold"
                                     android:textSize="14sp"
@@ -527,14 +520,13 @@
                             </LinearLayout>
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:textSize="19sp"
+                                android:textSize="18sp"
                                 android:textStyle="bold"
                                 android:textColor="@color/black"
                                 android:text="0.00"
-                                android:layout_weight="1"
-                                android:gravity="right"
+                                android:gravity="end"
                                 />
 
                         </LinearLayout>
@@ -553,12 +545,10 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
                             android:gravity="center_vertical"
-                            android:elevation="3dp"
                             android:background="@drawable/donate_round_shape"
                             android:padding="6dp"
                             android:layout_margin="7dp"
                             android:layout_weight="1"
-                            android:weightSum="2"
                             >
                             <LinearLayout
                                 android:layout_width="wrap_content"
@@ -566,7 +556,6 @@
                                 android:orientation="vertical"
                                 android:gravity="center"
                                 android:layout_margin="5dp"
-                                android:layout_weight="1"
                                 >
                                 <ImageView
                                     android:layout_width="30dp"
@@ -586,14 +575,13 @@
                             </LinearLayout>
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:textSize="19sp"
+                                android:textSize="18sp"
                                 android:textStyle="bold"
                                 android:textColor="@color/black"
                                 android:text="0.00"
-                                android:layout_weight="1"
-                                android:gravity="right"
+                                android:gravity="end"
                                 />
 
                         </LinearLayout>
@@ -604,12 +592,10 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
                             android:gravity="center_vertical"
-                            android:elevation="3dp"
                             android:background="@drawable/donate_round_shape"
                             android:padding="6dp"
                             android:layout_margin="7dp"
                             android:layout_weight="1"
-                            android:weightSum="2"
                             >
                             <LinearLayout
                                 android:layout_width="wrap_content"
@@ -617,7 +603,6 @@
                                 android:orientation="vertical"
                                 android:gravity="center"
                                 android:layout_margin="5dp"
-                                android:layout_weight="1"
                                 >
                                 <ImageView
                                     android:layout_width="30dp"
@@ -637,14 +622,13 @@
                             </LinearLayout>
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:textSize="19sp"
+                                android:textSize="18sp"
                                 android:textStyle="bold"
                                 android:textColor="@color/black"
                                 android:text="0.00"
-                                android:layout_weight="1"
-                                android:gravity="right"
+                                android:gravity="end"
                                 />
 
                         </LinearLayout>
@@ -661,7 +645,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="5dp"
                 android:layout_marginBottom="10dp"
                 >
                 <TextView
@@ -697,12 +680,13 @@
                         android:textSize="16sp"
                         android:textStyle="bold"
                         android:text="Monk Surrounded by Children"
-                        android:padding="3dp"
+                        android:paddingVertical="3dp"
+                        android:paddingHorizontal="9dp"
                         />
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:paddingLeft="10dp"
+                        android:paddingLeft="13dp"
                         android:text="Hello Everyone, Good News for USA citizens. Empowering Development Project Inc. promotes cooking training opportunity for cook lovers named Culinary Training Workshop. So why late? Join our workshop. Hope you will enjoy our session. "
                         />
 
@@ -712,14 +696,15 @@
                         android:text="Recent Donate"
                         android:textStyle="bold"
                         android:textSize="15sp"
-                        android:padding="5dp"
+                        android:paddingVertical="3dp"
+                        android:paddingHorizontal="9dp"
                         />
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:padding="5dp"
+                        android:paddingLeft="13dp"
                         >
 
                         <ImageView
@@ -752,12 +737,13 @@
 
                     <Button
                         android:layout_width="match_parent"
-                        android:layout_margin="3dp"
                         android:layout_height="wrap_content"
                         android:text="@string/donate"
-                        android:backgroundTint="@color/orangeDark"
+                        app:backgroundTint="@color/orangeDark"
                         android:layout_gravity="center"
-                        android:elevation="3dp"
+                        android:layout_marginHorizontal="15dp"
+                        android:background="@drawable/button_shape"
+                        android:layout_marginVertical="11dp"
                         />
 
                 </LinearLayout>
@@ -786,12 +772,13 @@
                         android:textSize="16sp"
                         android:textStyle="bold"
                         android:text="Monk Surrounded by Children"
-                        android:padding="3dp"
+                        android:paddingVertical="3dp"
+                        android:paddingHorizontal="9dp"
                         />
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:paddingLeft="10dp"
+                        android:paddingLeft="13dp"
                         android:text="Hello Everyone, Good News for USA citizens. Empowering Development Project Inc. promotes cooking training opportunity for cook lovers named Culinary Training Workshop. So why late? Join our workshop. Hope you will enjoy our session. "
                         />
 
@@ -801,14 +788,15 @@
                         android:text="Recent Donate"
                         android:textStyle="bold"
                         android:textSize="15sp"
-                        android:padding="5dp"
+                        android:paddingVertical="3dp"
+                        android:paddingHorizontal="9dp"
                         />
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:padding="5dp"
+                        android:paddingLeft="13dp"
                         >
 
                         <ImageView
@@ -841,12 +829,13 @@
 
                     <Button
                         android:layout_width="match_parent"
-                        android:layout_margin="3dp"
                         android:layout_height="wrap_content"
                         android:text="@string/donate"
-                        android:backgroundTint="@color/orangeDark"
+                        app:backgroundTint="@color/orangeDark"
                         android:layout_gravity="center"
-                        android:elevation="3dp"
+                        android:layout_marginHorizontal="15dp"
+                        android:background="@drawable/button_shape"
+                        android:layout_marginVertical="11dp"
                         />
 
                 </LinearLayout>
@@ -875,12 +864,13 @@
                         android:textSize="16sp"
                         android:textStyle="bold"
                         android:text="Monk Surrounded by Children"
-                        android:padding="3dp"
+                        android:paddingVertical="3dp"
+                        android:paddingHorizontal="9dp"
                         />
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:paddingLeft="10dp"
+                        android:paddingLeft="13dp"
                         android:text="Hello Everyone, Good News for USA citizens. Empowering Development Project Inc. promotes cooking training opportunity for cook lovers named Culinary Training Workshop. So why late? Join our workshop. Hope you will enjoy our session. "
                         />
 
@@ -890,14 +880,15 @@
                         android:text="Recent Donate"
                         android:textStyle="bold"
                         android:textSize="15sp"
-                        android:padding="5dp"
+                        android:paddingVertical="3dp"
+                        android:paddingHorizontal="9dp"
                         />
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:padding="5dp"
+                        android:paddingLeft="13dp"
                         >
 
                         <ImageView
@@ -930,12 +921,13 @@
 
                     <Button
                         android:layout_width="match_parent"
-                        android:layout_margin="3dp"
                         android:layout_height="wrap_content"
                         android:text="@string/donate"
-                        android:backgroundTint="@color/orangeDark"
+                        app:backgroundTint="@color/orangeDark"
                         android:layout_gravity="center"
-                        android:elevation="3dp"
+                        android:layout_marginHorizontal="15dp"
+                        android:background="@drawable/button_shape"
+                        android:layout_marginVertical="11dp"
                         />
 
                 </LinearLayout>
@@ -964,12 +956,13 @@
                         android:textSize="16sp"
                         android:textStyle="bold"
                         android:text="Monk Surrounded by Children"
-                        android:padding="3dp"
+                        android:paddingVertical="3dp"
+                        android:paddingHorizontal="9dp"
                         />
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:paddingLeft="10dp"
+                        android:paddingLeft="13dp"
                         android:text="Hello Everyone, Good News for USA citizens. Empowering Development Project Inc. promotes cooking training opportunity for cook lovers named Culinary Training Workshop. So why late? Join our workshop. Hope you will enjoy our session. "
                         />
 
@@ -979,14 +972,15 @@
                         android:text="Recent Donate"
                         android:textStyle="bold"
                         android:textSize="15sp"
-                        android:padding="5dp"
+                        android:paddingVertical="3dp"
+                        android:paddingHorizontal="9dp"
                         />
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:padding="5dp"
+                        android:paddingLeft="13dp"
                         >
 
                         <ImageView
@@ -1019,12 +1013,13 @@
 
                     <Button
                         android:layout_width="match_parent"
-                        android:layout_margin="3dp"
                         android:layout_height="wrap_content"
                         android:text="@string/donate"
-                        android:backgroundTint="@color/orangeDark"
+                        app:backgroundTint="@color/orangeDark"
                         android:layout_gravity="center"
-                        android:elevation="3dp"
+                        android:layout_marginHorizontal="15dp"
+                        android:background="@drawable/button_shape"
+                        android:layout_marginVertical="11dp"
                         />
 
                 </LinearLayout>

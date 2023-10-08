@@ -5,4 +5,5 @@
     <color name="orangeDark">#FF9800</color>
     <color name="orangeLight">#F6BD11</color>
     <color name="offWhite">#D2D0D0</color>
+    <color name="appBarColor">#f2ce94</color>
 </resources>
