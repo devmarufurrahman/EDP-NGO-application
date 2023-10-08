@@ -9,6 +9,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:scrollbars="none"
         >
         <LinearLayout
             android:layout_width="match_parent"
@@ -80,7 +81,7 @@
                 android:scrollbars="none"
                 >
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     >
@@ -110,6 +111,7 @@
                             android:textStyle="bold"
                             android:text="Monk Surrounded by Children"
                             android:paddingLeft="10dp"
+                            android:layout_marginVertical="7dp"
                             />
                         <Button
                             android:layout_width="match_parent"
@@ -122,6 +124,7 @@
                             />
 
                     </LinearLayout>
+
 
                     <LinearLayout
                         android:layout_width="230dp"
@@ -149,18 +152,20 @@
                             android:textStyle="bold"
                             android:text="Monk Surrounded by Children"
                             android:paddingLeft="10dp"
+                            android:layout_marginVertical="7dp"
                             />
                         <Button
                             android:layout_width="match_parent"
                             android:layout_marginHorizontal="10dp"
                             android:layout_height="wrap_content"
                             android:text="@string/donate"
-                            app:backgroundTint="@color/orangeDark"
                             android:layout_gravity="center"
                             android:background="@drawable/button_shape"
+                            app:backgroundTint="@color/orangeDark"
                             />
 
                     </LinearLayout>
+
 
                     <LinearLayout
                         android:layout_width="230dp"
@@ -188,18 +193,20 @@
                             android:textStyle="bold"
                             android:text="Monk Surrounded by Children"
                             android:paddingLeft="10dp"
+                            android:layout_marginVertical="7dp"
                             />
                         <Button
                             android:layout_width="match_parent"
                             android:layout_marginHorizontal="10dp"
                             android:layout_height="wrap_content"
                             android:text="@string/donate"
-                            app:backgroundTint="@color/orangeDark"
                             android:layout_gravity="center"
                             android:background="@drawable/button_shape"
+                            app:backgroundTint="@color/orangeDark"
                             />
 
                     </LinearLayout>
+
 
                 </LinearLayout>
 
@@ -211,7 +218,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="2dp"
+                android:paddingHorizontal="7dp"
+                android:paddingBottom="10dp"
                 android:elevation="4dp"
                 android:background="@drawable/feature_post_shape"
                 android:layout_marginHorizontal="3dp"
@@ -405,239 +413,233 @@
             </LinearLayout>
 
 
-<!--            People Donate us-->
+            <!--            People Donate us-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
+                android:paddingHorizontal="7dp"
+                android:paddingBottom="10dp"
+                android:elevation="4dp"
+                android:background="@drawable/feature_post_shape"
+                android:layout_marginHorizontal="3dp"
                 android:layout_marginBottom="20dp"
                 >
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:text="Peoples Donate"
-                    android:textColor="@color/black"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     android:textStyle="bold"
-                    android:layout_margin="3dp"
+                    android:textColor="@color/black"
+                    android:layout_margin="5dp"
                     />
-
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@drawable/feature_post_shape"
-                    android:layout_marginHorizontal="4dp"
-                    android:layout_marginVertical="4dp"
-                    android:elevation="4dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
                     >
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="150dp"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:weightSum="2"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/donate_round_shape"
+                        android:padding="6dp"
+                        android:layout_margin="7dp"
+                        android:layout_weight="1"
                         >
                         <LinearLayout
-                            android:layout_width="150dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:gravity="center_vertical"
-                            android:background="@drawable/donate_round_shape"
-                            android:padding="6dp"
-                            android:layout_margin="7dp"
-                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:layout_margin="5dp"
                             >
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:orientation="vertical"
-                                android:gravity="center"
-                                android:layout_margin="5dp"
-                                >
-                                <ImageView
-                                    android:layout_width="30dp"
-                                    android:layout_height="30dp"
-                                    android:src="@drawable/baseline_account_balance_24"
-                                    app:tint="@color/black" />
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/baseline_account_balance_24"
+                                app:tint="@color/black" />
 
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Total Donate"
-                                    android:textColor="@color/black"
-                                    android:textStyle="bold"
-                                    android:textSize="14sp"
-                                    />
-                            </LinearLayout>
 
                             <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:textSize="18sp"
-                                android:textStyle="bold"
-                                android:textColor="@color/black"
-                                android:text="0.00"
-                                android:gravity="end"
-                                />
-
-                        </LinearLayout>
-
-
-                        <LinearLayout
-                            android:layout_width="150dp"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:gravity="center_vertical"
-                            android:background="@drawable/donate_round_shape"
-                            android:padding="6dp"
-                            android:layout_margin="7dp"
-                            android:layout_weight="1"
-                            >
-                            <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:orientation="vertical"
-                                android:gravity="center"
-                                android:layout_margin="5dp"
-                                >
-                                <ImageView
-                                    android:layout_width="30dp"
-                                    android:layout_height="30dp"
-                                    android:src="@drawable/person_icon"
-                                    app:tint="@color/black" />
-
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Total Donors"
-                                    android:textColor="@color/black"
-                                    android:textStyle="bold"
-                                    android:textSize="14sp"
-                                    />
-                            </LinearLayout>
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:textSize="18sp"
-                                android:textStyle="bold"
+                                android:text="Total Donate"
                                 android:textColor="@color/black"
-                                android:text="0.00"
-                                android:gravity="end"
+                                android:textStyle="bold"
+                                android:textSize="14sp"
                                 />
-
                         </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:text="0.00"
+                            android:gravity="end"
+                            />
 
                     </LinearLayout>
 
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="150dp"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:weightSum="2"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/donate_round_shape"
+                        android:padding="6dp"
+                        android:layout_margin="7dp"
+                        android:layout_weight="1"
                         >
                         <LinearLayout
-                            android:layout_width="150dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:gravity="center_vertical"
-                            android:background="@drawable/donate_round_shape"
-                            android:padding="6dp"
-                            android:layout_margin="7dp"
-                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:layout_margin="5dp"
                             >
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:orientation="vertical"
-                                android:gravity="center"
-                                android:layout_margin="5dp"
-                                >
-                                <ImageView
-                                    android:layout_width="30dp"
-                                    android:layout_height="30dp"
-                                    android:src="@drawable/about_icon"
-                                    app:tint="@color/black" />
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/person_icon"
+                                app:tint="@color/black" />
 
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Our Goals"
-                                    android:textColor="@color/black"
-                                    android:textStyle="bold"
-                                    android:textSize="14sp"
-                                    />
-                            </LinearLayout>
 
                             <TextView
-                                android:layout_width="match_parent"
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:textSize="18sp"
-                                android:textStyle="bold"
+                                android:text="Total Donors"
                                 android:textColor="@color/black"
-                                android:text="0.00"
-                                android:gravity="end"
+                                android:textStyle="bold"
+                                android:textSize="14sp"
                                 />
-
                         </LinearLayout>
 
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:text="0.00"
+                            android:gravity="end"
+                            />
 
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    >
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/donate_round_shape"
+                        android:padding="6dp"
+                        android:layout_margin="7dp"
+                        android:layout_weight="1"
+                        >
                         <LinearLayout
-                            android:layout_width="150dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:gravity="center_vertical"
-                            android:background="@drawable/donate_round_shape"
-                            android:padding="6dp"
-                            android:layout_margin="7dp"
-                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:layout_margin="5dp"
                             >
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:orientation="vertical"
-                                android:gravity="center"
-                                android:layout_margin="5dp"
-                                >
-                                <ImageView
-                                    android:layout_width="30dp"
-                                    android:layout_height="30dp"
-                                    android:src="@drawable/home_icon"
-                                    app:tint="@color/black" />
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/about_icon"
+                                app:tint="@color/black" />
 
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Our Projects"
-                                    android:textColor="@color/black"
-                                    android:textStyle="bold"
-                                    android:textSize="14sp"
-                                    />
-                            </LinearLayout>
 
                             <TextView
-                                android:layout_width="match_parent"
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:textSize="18sp"
-                                android:textStyle="bold"
+                                android:text="Our Goals"
                                 android:textColor="@color/black"
-                                android:text="0.00"
-                                android:gravity="end"
+                                android:textStyle="bold"
+                                android:textSize="14sp"
                                 />
-
                         </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:text="0.00"
+                            android:gravity="end"
+                            />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/donate_round_shape"
+                        android:padding="6dp"
+                        android:layout_margin="7dp"
+                        android:layout_weight="1"
+                        >
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:layout_margin="5dp"
+                            >
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/home_icon"
+                                app:tint="@color/black" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Our Projects"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                android:textSize="14sp"
+                                />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:text="0.00"
+                            android:gravity="end"
+                            />
 
                     </LinearLayout>
 
                 </LinearLayout>
 
             </LinearLayout>
+
 
 
 <!--            News and Events -->
@@ -662,7 +664,8 @@
                     android:background="@drawable/feature_post_shape"
                     android:orientation="vertical"
                     android:elevation="5dp"
-                    android:layout_margin="5dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginHorizontal="3dp"
                     >
                     <com.google.android.material.imageview.ShapeableImageView
                         android:layout_width="match_parent"
@@ -673,67 +676,78 @@
                         app:shapeAppearance="@style/UpperImgRound"
                         />
 
-                    <TextView
-
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textSize="16sp"
-                        android:textStyle="bold"
-                        android:text="Monk Surrounded by Children"
-                        android:paddingVertical="3dp"
-                        android:paddingHorizontal="9dp"
-                        />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:paddingLeft="13dp"
-                        android:text="Hello Everyone, Good News for USA citizens. Empowering Development Project Inc. promotes cooking training opportunity for cook lovers named Culinary Training Workshop. So why late? Join our workshop. Hope you will enjoy our session. "
-                        />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Recent Donate"
-                        android:textStyle="bold"
-                        android:textSize="15sp"
-                        android:paddingVertical="3dp"
-                        android:paddingHorizontal="9dp"
-                        />
-
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:paddingLeft="13dp"
+                        android:orientation="vertical"
+                        android:padding="15dp"
                         >
 
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/person_pin_icon"
-                            />
+                        <TextView
 
-                        <ImageView
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/person_pin_icon"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:text="Monk Surrounded by Children"
+                            android:layout_marginBottom="7dp"
                             />
-
-                        <ImageView
-                            android:layout_width="wrap_content"
+                        <TextView
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/person_pin_icon"
+                            android:text="@string/hello_post_text"
+                            android:layout_marginBottom="7dp"
+                            android:letterSpacing="0.06"
+                            android:justificationMode="inter_word"
                             />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="4dp"
-                            android:text="+7 Donated"
+                            android:text="Recent Donate"
                             android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:layout_marginBottom="7dp"
                             />
 
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/person_pin_icon"
+                                />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/person_pin_icon"
+                                />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/person_pin_icon"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="4dp"
+                                android:text="+7 Donated"
+                                android:textStyle="bold"
+                                />
+
+                        </LinearLayout>
+
                     </LinearLayout>
+
+
 
                     <Button
                         android:layout_width="match_parent"
@@ -743,10 +757,13 @@
                         android:layout_gravity="center"
                         android:layout_marginHorizontal="15dp"
                         android:background="@drawable/button_shape"
-                        android:layout_marginVertical="11dp"
+                        android:layout_marginBottom="15dp"
                         />
 
                 </LinearLayout>
+
+
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -754,7 +771,8 @@
                     android:background="@drawable/feature_post_shape"
                     android:orientation="vertical"
                     android:elevation="5dp"
-                    android:layout_margin="5dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginHorizontal="3dp"
                     >
                     <com.google.android.material.imageview.ShapeableImageView
                         android:layout_width="match_parent"
@@ -765,67 +783,78 @@
                         app:shapeAppearance="@style/UpperImgRound"
                         />
 
-                    <TextView
-
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textSize="16sp"
-                        android:textStyle="bold"
-                        android:text="Monk Surrounded by Children"
-                        android:paddingVertical="3dp"
-                        android:paddingHorizontal="9dp"
-                        />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:paddingLeft="13dp"
-                        android:text="Hello Everyone, Good News for USA citizens. Empowering Development Project Inc. promotes cooking training opportunity for cook lovers named Culinary Training Workshop. So why late? Join our workshop. Hope you will enjoy our session. "
-                        />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Recent Donate"
-                        android:textStyle="bold"
-                        android:textSize="15sp"
-                        android:paddingVertical="3dp"
-                        android:paddingHorizontal="9dp"
-                        />
-
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:paddingLeft="13dp"
+                        android:orientation="vertical"
+                        android:padding="15dp"
                         >
 
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/person_pin_icon"
-                            />
+                        <TextView
 
-                        <ImageView
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/person_pin_icon"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:text="Monk Surrounded by Children"
+                            android:layout_marginBottom="7dp"
                             />
-
-                        <ImageView
-                            android:layout_width="wrap_content"
+                        <TextView
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/person_pin_icon"
+                            android:text="@string/hello_post_text"
+                            android:layout_marginBottom="7dp"
+                            android:letterSpacing="0.06"
+                            android:justificationMode="inter_word"
                             />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="4dp"
-                            android:text="+7 Donated"
+                            android:text="Recent Donate"
                             android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:layout_marginBottom="7dp"
                             />
 
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/person_pin_icon"
+                                />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/person_pin_icon"
+                                />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/person_pin_icon"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="4dp"
+                                android:text="+7 Donated"
+                                android:textStyle="bold"
+                                />
+
+                        </LinearLayout>
+
                     </LinearLayout>
+
+
 
                     <Button
                         android:layout_width="match_parent"
@@ -835,10 +864,13 @@
                         android:layout_gravity="center"
                         android:layout_marginHorizontal="15dp"
                         android:background="@drawable/button_shape"
-                        android:layout_marginVertical="11dp"
+                        android:layout_marginBottom="15dp"
                         />
 
                 </LinearLayout>
+
+
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -846,7 +878,8 @@
                     android:background="@drawable/feature_post_shape"
                     android:orientation="vertical"
                     android:elevation="5dp"
-                    android:layout_margin="5dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginHorizontal="3dp"
                     >
                     <com.google.android.material.imageview.ShapeableImageView
                         android:layout_width="match_parent"
@@ -857,67 +890,78 @@
                         app:shapeAppearance="@style/UpperImgRound"
                         />
 
-                    <TextView
-
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textSize="16sp"
-                        android:textStyle="bold"
-                        android:text="Monk Surrounded by Children"
-                        android:paddingVertical="3dp"
-                        android:paddingHorizontal="9dp"
-                        />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:paddingLeft="13dp"
-                        android:text="Hello Everyone, Good News for USA citizens. Empowering Development Project Inc. promotes cooking training opportunity for cook lovers named Culinary Training Workshop. So why late? Join our workshop. Hope you will enjoy our session. "
-                        />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Recent Donate"
-                        android:textStyle="bold"
-                        android:textSize="15sp"
-                        android:paddingVertical="3dp"
-                        android:paddingHorizontal="9dp"
-                        />
-
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:paddingLeft="13dp"
+                        android:orientation="vertical"
+                        android:padding="15dp"
                         >
 
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/person_pin_icon"
-                            />
+                        <TextView
 
-                        <ImageView
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/person_pin_icon"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:text="Monk Surrounded by Children"
+                            android:layout_marginBottom="7dp"
                             />
-
-                        <ImageView
-                            android:layout_width="wrap_content"
+                        <TextView
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/person_pin_icon"
+                            android:text="@string/hello_post_text"
+                            android:layout_marginBottom="7dp"
+                            android:letterSpacing="0.06"
+                            android:justificationMode="inter_word"
                             />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="4dp"
-                            android:text="+7 Donated"
+                            android:text="Recent Donate"
                             android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:layout_marginBottom="7dp"
                             />
 
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/person_pin_icon"
+                                />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/person_pin_icon"
+                                />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/person_pin_icon"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="4dp"
+                                android:text="+7 Donated"
+                                android:textStyle="bold"
+                                />
+
+                        </LinearLayout>
+
                     </LinearLayout>
+
+
 
                     <Button
                         android:layout_width="match_parent"
@@ -927,10 +971,13 @@
                         android:layout_gravity="center"
                         android:layout_marginHorizontal="15dp"
                         android:background="@drawable/button_shape"
-                        android:layout_marginVertical="11dp"
+                        android:layout_marginBottom="15dp"
                         />
 
                 </LinearLayout>
+
+
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -938,7 +985,8 @@
                     android:background="@drawable/feature_post_shape"
                     android:orientation="vertical"
                     android:elevation="5dp"
-                    android:layout_margin="5dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginHorizontal="3dp"
                     >
                     <com.google.android.material.imageview.ShapeableImageView
                         android:layout_width="match_parent"
@@ -949,67 +997,78 @@
                         app:shapeAppearance="@style/UpperImgRound"
                         />
 
-                    <TextView
-
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textSize="16sp"
-                        android:textStyle="bold"
-                        android:text="Monk Surrounded by Children"
-                        android:paddingVertical="3dp"
-                        android:paddingHorizontal="9dp"
-                        />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:paddingLeft="13dp"
-                        android:text="Hello Everyone, Good News for USA citizens. Empowering Development Project Inc. promotes cooking training opportunity for cook lovers named Culinary Training Workshop. So why late? Join our workshop. Hope you will enjoy our session. "
-                        />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Recent Donate"
-                        android:textStyle="bold"
-                        android:textSize="15sp"
-                        android:paddingVertical="3dp"
-                        android:paddingHorizontal="9dp"
-                        />
-
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:paddingLeft="13dp"
+                        android:orientation="vertical"
+                        android:padding="15dp"
                         >
 
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/person_pin_icon"
-                            />
+                        <TextView
 
-                        <ImageView
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/person_pin_icon"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:text="Monk Surrounded by Children"
+                            android:layout_marginBottom="7dp"
                             />
-
-                        <ImageView
-                            android:layout_width="wrap_content"
+                        <TextView
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/person_pin_icon"
+                            android:text="@string/hello_post_text"
+                            android:layout_marginBottom="7dp"
+                            android:letterSpacing="0.06"
+                            android:justificationMode="inter_word"
                             />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="4dp"
-                            android:text="+7 Donated"
+                            android:text="Recent Donate"
                             android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:layout_marginBottom="7dp"
                             />
 
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/person_pin_icon"
+                                />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/person_pin_icon"
+                                />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/person_pin_icon"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="4dp"
+                                android:text="+7 Donated"
+                                android:textStyle="bold"
+                                />
+
+                        </LinearLayout>
+
                     </LinearLayout>
+
+
 
                     <Button
                         android:layout_width="match_parent"
@@ -1019,10 +1078,118 @@
                         android:layout_gravity="center"
                         android:layout_marginHorizontal="15dp"
                         android:background="@drawable/button_shape"
-                        android:layout_marginVertical="11dp"
+                        android:layout_marginBottom="15dp"
                         />
 
                 </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/feature_post_shape"
+                    android:orientation="vertical"
+                    android:elevation="5dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginHorizontal="3dp"
+                    >
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/feature_image1"
+                        app:shapeAppearance="@style/UpperImgRound"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="15dp"
+                        >
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:text="Monk Surrounded by Children"
+                            android:layout_marginBottom="7dp"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/hello_post_text"
+                            android:layout_marginBottom="7dp"
+                            android:letterSpacing="0.06"
+                            android:justificationMode="inter_word"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Recent Donate"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:layout_marginBottom="7dp"
+                            />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/person_pin_icon"
+                                />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/person_pin_icon"
+                                />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/person_pin_icon"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="4dp"
+                                android:text="+7 Donated"
+                                android:textStyle="bold"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/donate"
+                        app:backgroundTint="@color/orangeDark"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="15dp"
+                        android:background="@drawable/button_shape"
+                        android:layout_marginBottom="15dp"
+                        />
+
+                </LinearLayout>
+
 
 
             </LinearLayout>
