@@ -89,7 +89,7 @@
                         android:layout_height="wrap_content"
                         android:background="@drawable/feature_post_shape"
                         android:orientation="vertical"
-                        android:elevation="5dp"
+                        android:elevation="4dp"
                         android:layout_margin="5dp"
                         >
                         <com.google.android.material.imageview.ShapeableImageView
@@ -126,7 +126,7 @@
                         android:layout_height="wrap_content"
                         android:background="@drawable/feature_post_shape"
                         android:orientation="vertical"
-                        android:elevation="5dp"
+                        android:elevation="4dp"
                         android:layout_margin="5dp"
                         >
                         <com.google.android.material.imageview.ShapeableImageView
@@ -163,7 +163,7 @@
                         android:layout_height="wrap_content"
                         android:background="@drawable/feature_post_shape"
                         android:orientation="vertical"
-                        android:elevation="5dp"
+                        android:elevation="4dp"
                         android:layout_margin="5dp"
                         >
                         <com.google.android.material.imageview.ShapeableImageView
@@ -200,6 +200,212 @@
             </HorizontalScrollView>
 
 
+<!--            Feature Icons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="2dp"
+                android:elevation="4dp"
+                android:background="@drawable/feature_post_shape"
+                android:layout_marginHorizontal="2dp"
+                android:layout_marginVertical="20dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="EDP NGO ACTIVITY"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_margin="5dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    android:layout_marginBottom="3dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/feature_post_shape"
+                        android:gravity="center"
+                        android:layout_margin="5dp"
+                        android:elevation="3dp"
+                        android:layout_weight="1"
+                        android:paddingVertical="10dp"
+
+                        >
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/baseline_account_balance_24"
+                            app:tint="@color/orangeLight"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/donate"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/feature_post_shape"
+                        android:gravity="center"
+                        android:layout_margin="5dp"
+                        android:elevation="3dp"
+                        android:layout_weight="1"
+                        android:paddingVertical="10dp"
+                        >
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/projects_icon"
+                            app:tint="@color/orangeLight"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/project"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/feature_post_shape"
+                        android:gravity="center"
+                        android:layout_margin="5dp"
+                        android:elevation="3dp"
+                        android:layout_weight="1"
+                        android:paddingVertical="10dp"
+                        >
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/baseline_image_24"
+                            app:tint="@color/orangeLight"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/gallery"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/feature_post_shape"
+                        android:gravity="center"
+                        android:layout_margin="5dp"
+                        android:elevation="3dp"
+                        android:layout_weight="1"
+                        android:paddingVertical="10dp"
+
+                        >
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/blog_icon"
+                            app:tint="@color/orangeLight"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/our_blogs"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/feature_post_shape"
+                        android:gravity="center"
+                        android:layout_margin="5dp"
+                        android:elevation="3dp"
+                        android:layout_weight="1"
+                        android:paddingVertical="10dp"
+                        >
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/about_icon"
+                            app:tint="@color/orangeLight"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/about_us"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/feature_post_shape"
+                        android:gravity="center"
+                        android:layout_margin="5dp"
+                        android:elevation="3dp"
+                        android:layout_weight="1"
+                        android:paddingVertical="10dp"
+                        >
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/contact_icon"
+                            app:tint="@color/orangeLight"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/contact_us"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+<!--            News and Events -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
