@@ -1,5 +1,7 @@
 package com.example.edpngo.fragment;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,60 +9,102 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
+import com.example.edpngo.MainActivity;
+import com.example.edpngo.ProjectDetails;
 import com.example.edpngo.R;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link ProjectFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class ProjectFragment extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+    Button englishBtn, computerBtn, healthBtn, fashionBtn, lawBtn, festivalBtn;
 
     public ProjectFragment() {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment ProjectFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static ProjectFragment newInstance(String param1, String param2) {
-        ProjectFragment fragment = new ProjectFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_project, container, false);
+        View view = inflater.inflate(R.layout.fragment_project, container, false);
+        englishBtn = view.findViewById(R.id.englishEnrollBtn);
+        computerBtn = view.findViewById(R.id.computerEnrollBtn);
+        healthBtn = view.findViewById(R.id.healthEnrollBtn);
+        fashionBtn = view.findViewById(R.id.fashionEnrollBtn);
+        lawBtn = view.findViewById(R.id.lawEnrollBtn);
+        festivalBtn = view.findViewById(R.id.festivalEnrollBtn);
+
+        englishBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), ProjectDetails.class);
+                intent.putExtra("img",R.drawable.english_project);
+                intent.putExtra("title",getString(R.string.esl_english));
+                intent.putExtra("desc",getString(R.string.english_desc));
+                startActivity(intent);
+            }
+        });
+
+        computerBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), ProjectDetails.class);
+                intent.putExtra("img",R.drawable.computer_project);
+                intent.putExtra("title",getString(R.string.computer_courses));
+                intent.putExtra("desc",getString(R.string.computer_desc));
+                startActivity(intent);
+            }
+        });
+
+        healthBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), ProjectDetails.class);
+                intent.putExtra("img",R.drawable.health_aid_project);
+                intent.putExtra("title",getString(R.string.home_health_aide));
+                intent.putExtra("desc",getString(R.string.health_desc));
+                startActivity(intent);
+            }
+        });
+
+        fashionBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), ProjectDetails.class);
+                intent.putExtra("img",R.drawable.fashion_design_project);
+                intent.putExtra("title",getString(R.string.fashion_design_text));
+                intent.putExtra("desc",getString(R.string.fashion_desc));
+                startActivity(intent);
+            }
+        });
+
+        lawBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), ProjectDetails.class);
+                intent.putExtra("img",R.drawable.lawyer_project);
+                intent.putExtra("title",getString(R.string.free_immigration_lawyer));
+                intent.putExtra("desc",getString(R.string.law_desc));
+                startActivity(intent);
+            }
+        });
+
+        festivalBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), ProjectDetails.class);
+                intent.putExtra("img",R.drawable.festival_project);
+                intent.putExtra("title",getString(R.string.festival_program));
+                intent.putExtra("desc",getString(R.string.festival_desc));
+                startActivity(intent);
+            }
+        });
+
+
+        return view;
     }
+
 }

@@ -26,4 +26,16 @@
     <string name="about_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
     <string name="mr_xxx">Mr. XXX</string>
     <string name="email_text">winkytech@gmail.com</string>
+    <string name="english_desc">What is an ESL Program? English as a Second Language (ESL), also called English as a Foreign Language (EFL), is an English language study prograrn for nonnative speakers. Most ESL programs have brief classes so that students can concentrate individual attention from their teachers. The goal of an ESL program is to improve the students English level. ESL classes teach different language skills, depending on students. English capabilities, interests, and needs. All programs teach the following:Conversational English, Grammar, Reading, Listening, Writing Comprehension and vocabulary.</string>
+    <string name="computer_desc">Keyboarding
+                                Microsoft Word
+                                Microsoft Excel
+                                Power Point
+                                In USA
+    </string>
+
+    <string name="health_desc">They must assist the patients in the activities of daily living and provide basic routine care; such as assistance in eating, bathing, brushing teeth, giving medicine, dress changing, checking a patients temperature and pulse rate and helping with artificial limbs or walking aids.</string>
+    <string name="fashion_desc">They must assist the patients in the activities of daily living and provide basic routine care; such as assistance in eating, bathing, brushing teeth, giving medicine, dress changing, checking a patients temperature and pulse rate and helping with artificial limbs or walking aids.</string>
+    <string name="law_desc">If anybody wants to visit United States for study, work or business purposes, needs proper documentations otherwise he/she will have to face detention, deportation proceedings through court. Immigration law is very complex here in USA. EPD is an organization can be helped them to solve the immigration related problems.</string>
+    <string name="festival_desc">A festival is an event generally celebrated by a community and centering some characteristic aspect of that community and its religion or cultures. It is often marked as a local or national holiday, fair or eid.</string>
 </resources>
