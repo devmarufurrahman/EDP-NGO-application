@@ -53,6 +53,7 @@
                         />
 
                     <Button
+                        android:id="@+id/englishEnrollBtn"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/enroll_now"
@@ -106,6 +107,7 @@
                         />
 
                     <Button
+                        android:id="@+id/computerEnrollBtn"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/enroll_now"
@@ -159,6 +161,7 @@
                         />
 
                     <Button
+                        android:id="@+id/healthEnrollBtn"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/enroll_now"
@@ -212,6 +215,7 @@
                         />
 
                     <Button
+                        android:id="@+id/fashionEnrollBtn"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/enroll_now"
@@ -265,6 +269,7 @@
                         />
 
                     <Button
+                        android:id="@+id/lawEnrollBtn"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/enroll_now"
@@ -318,6 +323,7 @@
                         />
 
                     <Button
+                        android:id="@+id/festivalEnrollBtn"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/enroll_now"
