@@ -19,32 +19,85 @@
             >
 
 <!--            user hello -->
-            <LinearLayout
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/userMsgLinear"
-                android:orientation="vertical"
-                android:layout_marginBottom="20dp"
+                app:cardElevation="3dp"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true"
                 >
-
-                <TextView
-                    android:id="@+id/helloUser"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Hello, User"
-                    android:textSize="32sp"
-                    android:textColor="@color/black"
-                    android:textStyle="bold"
-                    android:gravity="center_vertical"
-                    />
+                    android:orientation="horizontal"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        >
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:padding="4dp"
+                            app:shapeAppearance="@style/RoundFullImage"
+                            android:src="@drawable/avatar_image"
+                            app:strokeColor="@color/gray"
+                            app:strokeWidth="4dp"
+                            android:scaleType="fitCenter"
+                            />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="16sp"
-                    android:text="Share the Love, Make a Difference: Donate Today!"
-                    />
-            </LinearLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="5dp"
+                        android:layout_weight="1"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Mr. XXX"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:gravity="start"
+                            android:textSize="14sp"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:drawablePadding="5dp"
+                            android:text="01757000000"
+                            app:drawableStartCompat="@drawable/round_phone_24"
+                            app:drawableTint="@color/orangeLight" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:drawablePadding="5dp"
+                            android:text="@string/email_text"
+                            app:drawableStartCompat="@drawable/email_icon"
+                            app:drawableTint="@color/orangeLight" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
 
 <!--            Feature Section -->
             <LinearLayout
@@ -57,7 +110,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Featured goals"
+                    android:text="Featured Projects"
                     android:textStyle="bold"
                     android:textSize="18sp"
                     android:layout_weight="1"
@@ -90,7 +143,7 @@
                         android:layout_height="wrap_content"
                         android:background="@drawable/feature_post_shape"
                         android:orientation="vertical"
-                        android:elevation="4dp"
+                        android:elevation="2dp"
                         android:layout_margin="5dp"
                         android:paddingBottom="10dp"
                         >
@@ -99,7 +152,7 @@
                             android:layout_height="wrap_content"
                             android:adjustViewBounds="true"
                             android:scaleType="fitCenter"
-                            android:src="@drawable/feature_image1"
+                            android:src="@drawable/festival_project"
                             app:shapeAppearance="@style/UpperImgRound"
                             />
 
@@ -109,7 +162,7 @@
                             android:layout_height="wrap_content"
                             android:textSize="16sp"
                             android:textStyle="bold"
-                            android:text="Monk Surrounded by Children"
+                            android:text="@string/festival_program"
                             android:paddingLeft="10dp"
                             android:layout_marginVertical="7dp"
                             />
@@ -131,7 +184,7 @@
                         android:layout_height="wrap_content"
                         android:background="@drawable/feature_post_shape"
                         android:orientation="vertical"
-                        android:elevation="4dp"
+                        android:elevation="2dp"
                         android:layout_margin="5dp"
                         android:paddingBottom="10dp"
                         >
@@ -140,7 +193,7 @@
                             android:layout_height="wrap_content"
                             android:adjustViewBounds="true"
                             android:scaleType="fitCenter"
-                            android:src="@drawable/feature_image1"
+                            android:src="@drawable/computer_project"
                             app:shapeAppearance="@style/UpperImgRound"
                             />
 
@@ -150,7 +203,7 @@
                             android:layout_height="wrap_content"
                             android:textSize="16sp"
                             android:textStyle="bold"
-                            android:text="Monk Surrounded by Children"
+                            android:text="@string/computer_courses"
                             android:paddingLeft="10dp"
                             android:layout_marginVertical="7dp"
                             />
@@ -172,7 +225,7 @@
                         android:layout_height="wrap_content"
                         android:background="@drawable/feature_post_shape"
                         android:orientation="vertical"
-                        android:elevation="4dp"
+                        android:elevation="2dp"
                         android:layout_margin="5dp"
                         android:paddingBottom="10dp"
                         >
@@ -181,7 +234,7 @@
                             android:layout_height="wrap_content"
                             android:adjustViewBounds="true"
                             android:scaleType="fitCenter"
-                            android:src="@drawable/feature_image1"
+                            android:src="@drawable/health_aid_project"
                             app:shapeAppearance="@style/UpperImgRound"
                             />
 
@@ -191,7 +244,7 @@
                             android:layout_height="wrap_content"
                             android:textSize="16sp"
                             android:textStyle="bold"
-                            android:text="Monk Surrounded by Children"
+                            android:text="@string/home_health_aide"
                             android:paddingLeft="10dp"
                             android:layout_marginVertical="7dp"
                             />
@@ -220,7 +273,7 @@
                 android:orientation="vertical"
                 android:paddingHorizontal="7dp"
                 android:paddingBottom="10dp"
-                android:elevation="4dp"
+                android:elevation="2dp"
                 android:background="@drawable/feature_post_shape"
                 android:layout_marginHorizontal="3dp"
                 android:layout_marginVertical="20dp"
@@ -420,7 +473,7 @@
                 android:orientation="vertical"
                 android:paddingHorizontal="7dp"
                 android:paddingBottom="10dp"
-                android:elevation="4dp"
+                android:elevation="2dp"
                 android:background="@drawable/feature_post_shape"
                 android:layout_marginHorizontal="3dp"
                 android:layout_marginBottom="20dp"
@@ -483,6 +536,7 @@
                             android:textStyle="bold"
                             android:textColor="@color/black"
                             android:text="0.00"
+                            android:paddingEnd="5dp"
                             android:gravity="end"
                             />
 
@@ -531,6 +585,7 @@
                             android:textColor="@color/black"
                             android:text="0.00"
                             android:gravity="end"
+                            android:paddingEnd="5dp"
                             />
 
                     </LinearLayout>
@@ -585,6 +640,7 @@
                             android:textColor="@color/black"
                             android:text="0.00"
                             android:gravity="end"
+                            android:paddingEnd="5dp"
                             />
 
                     </LinearLayout>
@@ -632,6 +688,7 @@
                             android:textColor="@color/black"
                             android:text="0.00"
                             android:gravity="end"
+                            android:paddingEnd="5dp"
                             />
 
                     </LinearLayout>
@@ -663,7 +720,7 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/feature_post_shape"
                     android:orientation="vertical"
-                    android:elevation="5dp"
+                    android:elevation="2dp"
                     android:layout_marginVertical="10dp"
                     android:layout_marginHorizontal="3dp"
                     >
@@ -770,7 +827,7 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/feature_post_shape"
                     android:orientation="vertical"
-                    android:elevation="5dp"
+                    android:elevation="2dp"
                     android:layout_marginVertical="10dp"
                     android:layout_marginHorizontal="3dp"
                     >
@@ -877,7 +934,7 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/feature_post_shape"
                     android:orientation="vertical"
-                    android:elevation="5dp"
+                    android:elevation="2dp"
                     android:layout_marginVertical="10dp"
                     android:layout_marginHorizontal="3dp"
                     >
@@ -984,7 +1041,7 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/feature_post_shape"
                     android:orientation="vertical"
-                    android:elevation="5dp"
+                    android:elevation="2dp"
                     android:layout_marginVertical="10dp"
                     android:layout_marginHorizontal="3dp"
                     >
@@ -1091,7 +1148,7 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/feature_post_shape"
                     android:orientation="vertical"
-                    android:elevation="5dp"
+                    android:elevation="2dp"
                     android:layout_marginVertical="10dp"
                     android:layout_marginHorizontal="3dp"
                     >
