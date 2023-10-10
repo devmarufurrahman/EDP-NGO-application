@@ -168,12 +168,13 @@
                             android:textStyle="bold" />
 
                         <Button
+                            android:id="@+id/featureProjectBtn1"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:layout_marginHorizontal="10dp"
                             android:background="@drawable/button_shape"
-                            android:text="@string/donate"
+                            android:text="@string/view_details"
                             app:backgroundTint="@color/orangeDark" />
 
                     </LinearLayout>
@@ -208,10 +209,11 @@
                             android:layout_marginVertical="7dp"
                             />
                         <Button
+                            android:id="@+id/featureProjectBtn2"
                             android:layout_width="match_parent"
                             android:layout_marginHorizontal="10dp"
                             android:layout_height="wrap_content"
-                            android:text="@string/donate"
+                            android:text="@string/view_details"
                             android:layout_gravity="center"
                             android:background="@drawable/button_shape"
                             app:backgroundTint="@color/orangeDark"
@@ -249,10 +251,11 @@
                             android:layout_marginVertical="7dp"
                             />
                         <Button
+                            android:id="@+id/featureProjectBtn3"
                             android:layout_width="match_parent"
                             android:layout_marginHorizontal="10dp"
                             android:layout_height="wrap_content"
-                            android:text="@string/donate"
+                            android:text="@string/view_details"
                             android:layout_gravity="center"
                             android:background="@drawable/button_shape"
                             app:backgroundTint="@color/orangeDark"
@@ -297,6 +300,7 @@
                     android:layout_marginBottom="3dp"
                     >
                     <LinearLayout
+                        android:id="@+id/donateActivityLayout"
                         android:layout_width="100dp"
                         android:layout_height="80dp"
                         android:orientation="vertical"
@@ -410,6 +414,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/aboutActivityLayout"
                         android:layout_width="100dp"
                         android:layout_height="80dp"
                         android:orientation="vertical"
@@ -436,6 +441,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/contactActivityLayout"
                         android:layout_width="100dp"
                         android:layout_height="80dp"
                         android:orientation="vertical"
@@ -758,15 +764,6 @@
                             android:justificationMode="inter_word"
                             />
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Recent Donate"
-                            android:textStyle="bold"
-                            android:textSize="15sp"
-                            android:layout_marginBottom="7dp"
-                            />
-
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -774,22 +771,37 @@
                             android:orientation="horizontal"
                             >
 
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/person_pin_icon"
+                            <com.google.android.material.imageview.ShapeableImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:padding="4dp"
+                                app:shapeAppearance="@style/RoundFullImage"
+                                android:src="@drawable/avatar_image"
+                                app:strokeColor="@color/gray"
+                                app:strokeWidth="2dp"
+                                android:scaleType="fitCenter"
                                 />
 
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/person_pin_icon"
+                            <com.google.android.material.imageview.ShapeableImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:padding="4dp"
+                                app:shapeAppearance="@style/RoundFullImage"
+                                android:src="@drawable/avatar_image"
+                                app:strokeColor="@color/gray"
+                                app:strokeWidth="2dp"
+                                android:scaleType="fitCenter"
                                 />
 
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/person_pin_icon"
+                            <com.google.android.material.imageview.ShapeableImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:padding="4dp"
+                                app:shapeAppearance="@style/RoundFullImage"
+                                android:src="@drawable/avatar_image"
+                                app:strokeColor="@color/gray"
+                                app:strokeWidth="2dp"
+                                android:scaleType="fitCenter"
                                 />
 
                             <TextView
@@ -807,6 +819,7 @@
 
 
                     <Button
+                        android:id="@+id/eventBtn1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/donate"
@@ -865,14 +878,6 @@
                             android:justificationMode="inter_word"
                             />
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Recent Donate"
-                            android:textStyle="bold"
-                            android:textSize="15sp"
-                            android:layout_marginBottom="7dp"
-                            />
 
 
                         <LinearLayout
@@ -881,22 +886,39 @@
                             android:orientation="horizontal"
                             >
 
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/person_pin_icon"
+
+
+                            <com.google.android.material.imageview.ShapeableImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:padding="4dp"
+                                app:shapeAppearance="@style/RoundFullImage"
+                                android:src="@drawable/avatar_image"
+                                app:strokeColor="@color/gray"
+                                app:strokeWidth="2dp"
+                                android:scaleType="fitCenter"
                                 />
 
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/person_pin_icon"
+                            <com.google.android.material.imageview.ShapeableImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:padding="4dp"
+                                app:shapeAppearance="@style/RoundFullImage"
+                                android:src="@drawable/avatar_image"
+                                app:strokeColor="@color/gray"
+                                app:strokeWidth="2dp"
+                                android:scaleType="fitCenter"
                                 />
 
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/person_pin_icon"
+                            <com.google.android.material.imageview.ShapeableImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:padding="4dp"
+                                app:shapeAppearance="@style/RoundFullImage"
+                                android:src="@drawable/avatar_image"
+                                app:strokeColor="@color/gray"
+                                app:strokeWidth="2dp"
+                                android:scaleType="fitCenter"
                                 />
 
                             <TextView
@@ -914,6 +936,7 @@
 
 
                     <Button
+                        android:id="@+id/eventBtn2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/donate"
@@ -972,15 +995,6 @@
                             android:justificationMode="inter_word"
                             />
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Recent Donate"
-                            android:textStyle="bold"
-                            android:textSize="15sp"
-                            android:layout_marginBottom="7dp"
-                            />
-
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -988,22 +1002,38 @@
                             android:orientation="horizontal"
                             >
 
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/person_pin_icon"
+
+                            <com.google.android.material.imageview.ShapeableImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:padding="4dp"
+                                app:shapeAppearance="@style/RoundFullImage"
+                                android:src="@drawable/avatar_image"
+                                app:strokeColor="@color/gray"
+                                app:strokeWidth="2dp"
+                                android:scaleType="fitCenter"
                                 />
 
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/person_pin_icon"
+                            <com.google.android.material.imageview.ShapeableImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:padding="4dp"
+                                app:shapeAppearance="@style/RoundFullImage"
+                                android:src="@drawable/avatar_image"
+                                app:strokeColor="@color/gray"
+                                app:strokeWidth="2dp"
+                                android:scaleType="fitCenter"
                                 />
 
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/person_pin_icon"
+                            <com.google.android.material.imageview.ShapeableImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:padding="4dp"
+                                app:shapeAppearance="@style/RoundFullImage"
+                                android:src="@drawable/avatar_image"
+                                app:strokeColor="@color/gray"
+                                app:strokeWidth="2dp"
+                                android:scaleType="fitCenter"
                                 />
 
                             <TextView
@@ -1021,6 +1051,7 @@
 
 
                     <Button
+                        android:id="@+id/eventBtn3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/donate"
@@ -1035,217 +1066,6 @@
 
 
 
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/feature_post_shape"
-                    android:orientation="vertical"
-                    android:elevation="2dp"
-                    android:layout_marginVertical="10dp"
-                    android:layout_marginHorizontal="3dp"
-                    >
-                    <com.google.android.material.imageview.ShapeableImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:adjustViewBounds="true"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/feature_image1"
-                        app:shapeAppearance="@style/UpperImgRound"
-                        />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:padding="15dp"
-                        >
-
-                        <TextView
-
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:textSize="16sp"
-                            android:textStyle="bold"
-                            android:text="Monk Surrounded by Children"
-                            android:layout_marginBottom="7dp"
-                            />
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/hello_post_text"
-                            android:layout_marginBottom="7dp"
-                            android:letterSpacing="0.06"
-                            android:justificationMode="inter_word"
-                            />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Recent Donate"
-                            android:textStyle="bold"
-                            android:textSize="15sp"
-                            android:layout_marginBottom="7dp"
-                            />
-
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            >
-
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/person_pin_icon"
-                                />
-
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/person_pin_icon"
-                                />
-
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/person_pin_icon"
-                                />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="4dp"
-                                android:text="+7 Donated"
-                                android:textStyle="bold"
-                                />
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-
-
-                    <Button
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/donate"
-                        app:backgroundTint="@color/orangeDark"
-                        android:layout_gravity="center"
-                        android:layout_marginHorizontal="15dp"
-                        android:background="@drawable/button_shape"
-                        android:layout_marginBottom="15dp"
-                        />
-
-                </LinearLayout>
-
-
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/feature_post_shape"
-                    android:orientation="vertical"
-                    android:elevation="2dp"
-                    android:layout_marginVertical="10dp"
-                    android:layout_marginHorizontal="3dp"
-                    >
-                    <com.google.android.material.imageview.ShapeableImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:adjustViewBounds="true"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/feature_image1"
-                        app:shapeAppearance="@style/UpperImgRound"
-                        />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:padding="15dp"
-                        >
-
-                        <TextView
-
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:textSize="16sp"
-                            android:textStyle="bold"
-                            android:text="Monk Surrounded by Children"
-                            android:layout_marginBottom="7dp"
-                            />
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/hello_post_text"
-                            android:layout_marginBottom="7dp"
-                            android:letterSpacing="0.06"
-                            android:justificationMode="inter_word"
-                            />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Recent Donate"
-                            android:textStyle="bold"
-                            android:textSize="15sp"
-                            android:layout_marginBottom="7dp"
-                            />
-
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            >
-
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/person_pin_icon"
-                                />
-
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/person_pin_icon"
-                                />
-
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/person_pin_icon"
-                                />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="4dp"
-                                android:text="+7 Donated"
-                                android:textStyle="bold"
-                                />
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-
-
-                    <Button
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/donate"
-                        app:backgroundTint="@color/orangeDark"
-                        android:layout_gravity="center"
-                        android:layout_marginHorizontal="15dp"
-                        android:background="@drawable/button_shape"
-                        android:layout_marginBottom="15dp"
-                        />
-
-                </LinearLayout>
 
 
 
