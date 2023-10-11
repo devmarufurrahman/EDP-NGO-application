@@ -32,69 +32,31 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
+                    android:padding="20dp"
+                    android:gravity="center_horizontal"
                     >
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        android:layout_weight="3"
-                        android:gravity="center_vertical"
-                        android:layout_marginLeft="10dp"
-                        >
-                        <com.google.android.material.imageview.ShapeableImageView
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
-                            android:padding="4dp"
-                            app:shapeAppearance="@style/RoundFullImage"
-                            android:src="@drawable/avatar_image"
-                            app:strokeColor="@color/gray"
-                            app:strokeWidth="4dp"
-                            android:scaleType="fitCenter"
-                            />
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:padding="4dp"
+                        app:shapeAppearance="@style/RoundFullImage"
+                        android:src="@drawable/avatar_image"
+                        app:strokeColor="@color/gray"
+                        app:strokeWidth="4dp"
+                        android:scaleType="fitCenter"
+                        />
 
-                    </LinearLayout>
-
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
+                    <TextView
+                        android:fontFamily="@font/font_family"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:padding="5dp"
-                        android:layout_weight="1"
-                        >
+                        android:text="Mr. XXX"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:gravity="start"
+                        android:textSize="14sp"
 
-                        <TextView
-                            android:fontFamily="@font/font_family"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Mr. XXX"
-                            android:textStyle="bold"
-                            android:textColor="@color/black"
-                            android:gravity="start"
-                            android:textSize="14sp"
-
-                            />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textSize="14sp"
-                            android:drawablePadding="5dp"
-                            android:text="01757000000"
-                            app:drawableStartCompat="@drawable/phone_icon"
-                            />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textSize="14sp"
-                            android:drawablePadding="5dp"
-                            android:text="@string/email_text"
-                            app:drawableStartCompat="@drawable/email_icon"
-
-                            />
-
-                    </LinearLayout>
+                        />
 
                 </LinearLayout>
 
@@ -284,11 +246,9 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:paddingHorizontal="7dp"
-                android:paddingBottom="10dp"
-                android:elevation="2dp"
-                android:background="@drawable/feature_post_shape"
-                android:layout_marginHorizontal="3dp"
-                android:layout_marginVertical="20dp"
+                android:paddingBottom="7dp"
+                android:background="@drawable/donate_round_shape"
+                android:layout_marginVertical="10dp"
                 >
                 <TextView
                     android:fontFamily="@font/font_family"
@@ -298,8 +258,8 @@
                     android:text="Edp Ngo Activity"
                     android:textSize="16sp"
                     android:textStyle="bold"
-                    android:textColor="@color/black"
-                    android:layout_margin="5dp"
+                    android:textColor="@color/textColor"
+                    android:layout_margin="10dp"
                     />
 
                 <LinearLayout
@@ -307,18 +267,18 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:weightSum="3"
-                    android:layout_marginBottom="3dp"
                     >
                     <LinearLayout
                         android:id="@+id/donateActivityLayout"
-                        android:layout_width="100dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:layout_height="80dp"
                         android:orientation="vertical"
                         android:background="@drawable/donate_round_shape"
                         android:gravity="center"
                         android:layout_margin="5dp"
-                        android:layout_weight="1"
-                        android:paddingVertical="10dp"
+
+                        android:paddingVertical="6dp"
                         >
                         <ImageView
                             android:layout_width="40dp"
@@ -331,20 +291,22 @@
                             android:layout_height="wrap_content"
                             android:text="Donate"
                             android:textStyle="bold"
-                            android:textSize="15sp"
+                            android:textSize="13sp"
+                            android:textColor="@color/textColor"
                             />
 
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="100dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:layout_height="80dp"
                         android:orientation="vertical"
                         android:background="@drawable/donate_round_shape"
                         android:gravity="center"
+                        android:paddingVertical="6dp"
+                        android:layout_marginHorizontal="5dp"
                         android:layout_margin="5dp"
-                        android:layout_weight="1"
-                        android:paddingVertical="10dp"
                         >
                         <ImageView
                             android:layout_width="40dp"
@@ -355,22 +317,23 @@
                             android:fontFamily="@font/font_family"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Project"
+                            android:text="Projects"
                             android:textStyle="bold"
-                            android:textSize="15sp"
+                            android:textSize="13sp"
+                            android:textColor="@color/textColor"
                             />
 
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="100dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:layout_height="80dp"
                         android:orientation="vertical"
                         android:background="@drawable/donate_round_shape"
                         android:gravity="center"
+                        android:paddingVertical="6dp"
                         android:layout_margin="5dp"
-                        android:layout_weight="1"
-                        android:paddingVertical="10dp"
                         >
                         <ImageView
                             android:layout_width="40dp"
@@ -383,7 +346,8 @@
                             android:layout_height="wrap_content"
                             android:text="Gallery"
                             android:textStyle="bold"
-                            android:textSize="15sp"
+                            android:textSize="13sp"
+                            android:textColor="@color/textColor"
                             />
 
                     </LinearLayout>
@@ -397,14 +361,14 @@
                     android:weightSum="3"
                     >
                     <LinearLayout
-                        android:layout_width="100dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:layout_height="80dp"
                         android:orientation="vertical"
                         android:background="@drawable/donate_round_shape"
                         android:gravity="center"
                         android:layout_margin="5dp"
-                        android:layout_weight="1"
-                        android:paddingVertical="10dp"
+                        android:paddingVertical="5dp"
 
                         >
                         <ImageView
@@ -418,21 +382,22 @@
                             android:layout_height="wrap_content"
                             android:text="Our Blogs"
                             android:textStyle="bold"
-                            android:textSize="15sp"
+                            android:textSize="13sp"
+                            android:textColor="@color/textColor"
                             />
 
                     </LinearLayout>
 
                     <LinearLayout
                         android:id="@+id/aboutActivityLayout"
-                        android:layout_width="100dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:layout_height="80dp"
                         android:orientation="vertical"
                         android:background="@drawable/donate_round_shape"
                         android:gravity="center"
                         android:layout_margin="5dp"
-                        android:layout_weight="1"
-                        android:paddingVertical="10dp"
+                        android:paddingVertical="5dp"
                         >
                         <ImageView
                             android:layout_width="40dp"
@@ -445,21 +410,22 @@
                             android:layout_height="wrap_content"
                             android:text="@string/about_us"
                             android:textStyle="bold"
-                            android:textSize="15sp"
+                            android:textSize="13sp"
+                            android:textColor="@color/textColor"
                             />
 
                     </LinearLayout>
 
                     <LinearLayout
                         android:id="@+id/contactActivityLayout"
-                        android:layout_width="100dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:layout_height="80dp"
                         android:orientation="vertical"
                         android:background="@drawable/donate_round_shape"
                         android:gravity="center"
                         android:layout_margin="5dp"
-                        android:layout_weight="1"
-                        android:paddingVertical="10dp"
+                        android:paddingVertical="5dp"
                         >
                         <ImageView
                             android:layout_width="40dp"
@@ -472,7 +438,8 @@
                             android:layout_height="wrap_content"
                             android:text="@string/contact_us"
                             android:textStyle="bold"
-                            android:textSize="15sp"
+                            android:textSize="13sp"
+                            android:textColor="@color/textColor"
                             />
 
                     </LinearLayout>
@@ -489,8 +456,7 @@
                 android:orientation="vertical"
                 android:paddingHorizontal="7dp"
                 android:paddingBottom="10dp"
-                android:elevation="2dp"
-                android:background="@drawable/feature_post_shape"
+                android:background="@drawable/donate_round_shape"
                 android:layout_marginHorizontal="3dp"
                 android:layout_marginBottom="20dp"
                 >
@@ -503,7 +469,7 @@
                     android:textSize="16sp"
                     android:textStyle="bold"
                     android:textColor="@color/black"
-                    android:layout_margin="5dp"
+                    android:layout_margin="10dp"
                     />
 
                 <LinearLayout
@@ -532,7 +498,7 @@
                             <ImageView
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
-                                android:src="@drawable/donation_icon"
+                                android:src="@drawable/total_donate_icon"
                                 />
 
 

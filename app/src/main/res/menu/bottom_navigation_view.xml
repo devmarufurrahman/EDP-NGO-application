@@ -14,7 +14,7 @@
 
     <item
         android:id="@+id/navProject"
-        android:title="Project"
+        android:title="Projects"
         android:icon="@drawable/projects_icon"
         />
 
