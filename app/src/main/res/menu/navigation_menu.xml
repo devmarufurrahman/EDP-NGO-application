@@ -4,7 +4,7 @@
     <item
         android:id="@+id/navProfile"
         android:title="@string/profile"
-        android:icon="@drawable/person_icon"
+        android:icon="@drawable/profile_icon"
         />
 
     <item
@@ -28,6 +28,6 @@
     <item
         android:id="@+id/navLogout"
         android:title="Logout"
-        android:icon="@drawable/logout"
+        android:icon="@drawable/logout_icon"
         />
 </menu>

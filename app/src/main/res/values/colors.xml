@@ -7,4 +7,5 @@
     <color name="offWhite">#D2D0D0</color>
     <color name="appBarColor">#f2ce94</color>
     <color name="gray">#BDBBB9</color>
+    <color name="transparent">#21000000</color>
 </resources>

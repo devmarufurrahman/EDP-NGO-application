@@ -46,6 +46,7 @@
                             />
 
                         <Button
+                            android:fontFamily="@font/font_family"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Our Mission"
@@ -89,6 +90,7 @@
                             />
 
                         <Button
+                            android:fontFamily="@font/font_family"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Our Vision"
@@ -113,6 +115,7 @@
                 android:layout_marginBottom="15dp"
                 >
                 <TextView
+                    android:fontFamily="@font/font_family"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/about_us"
@@ -130,6 +133,7 @@
                     />
 
                 <TextView
+                    android:fontFamily="@font/font_family"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="15sp"
@@ -184,6 +188,7 @@
                                 />
 
                             <TextView
+                                android:fontFamily="@font/font_family"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Mr. XXX"
@@ -196,6 +201,7 @@
 
 
                             <TextView
+                                android:fontFamily="@font/font_family"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Honorable President "
@@ -240,6 +246,7 @@
                                 />
 
                             <TextView
+                                android:fontFamily="@font/font_family"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Mr. XXX"
@@ -252,6 +259,7 @@
 
 
                             <TextView
+                                android:fontFamily="@font/font_family"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Direcotr"
@@ -295,6 +303,7 @@
                                 />
 
                             <TextView
+                                android:fontFamily="@font/font_family"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Mr. XXX"
@@ -307,6 +316,7 @@
 
 
                             <TextView
+                                android:fontFamily="@font/font_family"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Founder and Secretary "

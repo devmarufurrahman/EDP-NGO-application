@@ -25,6 +25,7 @@
         android:layout_margin="10dp"
         >
         <EditText
+            android:fontFamily="@font/font_family"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Subject"
@@ -38,6 +39,7 @@
             />
 
         <EditText
+            android:fontFamily="@font/font_family"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="*Massege"
@@ -67,6 +69,7 @@
                 android:padding="15dp"
                 >
                 <TextView
+                    android:fontFamily="@font/font_family"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="From"
@@ -75,6 +78,7 @@
                     />
 
                 <TextView
+                    android:fontFamily="@font/font_family"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/mr_xxx"
@@ -86,6 +90,7 @@
                     />
 
                 <TextView
+                    android:fontFamily="@font/font_family"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Email"
@@ -94,6 +99,7 @@
                     />
 
                 <TextView
+                    android:fontFamily="@font/font_family"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/email_text"
@@ -105,6 +111,7 @@
                     />
 
                 <TextView
+                    android:fontFamily="@font/font_family"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Phone"
@@ -113,6 +120,7 @@
                     />
 
                 <TextView
+                    android:fontFamily="@font/font_family"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="017570000"
@@ -131,6 +139,7 @@
 
 
         <Button
+            android:fontFamily="@font/font_family"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Send Message"

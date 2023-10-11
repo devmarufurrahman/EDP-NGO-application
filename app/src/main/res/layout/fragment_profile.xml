@@ -64,10 +64,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="14sp"
-                    android:drawableStart="@drawable/round_phone_24"
+                    android:drawableStart="@drawable/rsz_phone_icon"
                     android:drawablePadding="5dp"
                     android:text="01757000000"
-                    android:drawableTint="@color/orangeLight"
                     />
 
 
@@ -75,10 +74,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="14sp"
-                    android:drawableStart="@drawable/email_icon"
+                    android:drawableStart="@drawable/rsz_email_icon"
                     android:drawablePadding="5dp"
                     android:text="@string/email_text"
-                    android:drawableTint="@color/orangeLight"
                     />
 
 
@@ -110,8 +108,7 @@
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:src="@drawable/baseline_account_balance_24"
-                    app:tint="@color/orangeLight"
+                    android:src="@drawable/donation_icon"
                     android:layout_weight="1"
                     />
 
@@ -164,8 +161,7 @@
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:src="@drawable/activity_icon"
-                    app:tint="@color/orangeLight"
+                    android:src="@drawable/projects_icon"
                     android:layout_weight="1"
                     />
 

@@ -28,6 +28,7 @@
             android:orientation="vertical"
             >
             <TextView
+                android:fontFamily="@font/font_family"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="?attr/colorPrimary"
@@ -38,6 +39,7 @@
                 />
 
             <TextView
+                android:fontFamily="@font/font_family"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#AE000000"

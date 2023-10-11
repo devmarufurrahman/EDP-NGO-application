@@ -9,7 +9,7 @@
     <item
         android:id="@+id/navDonate"
         android:title="Donate"
-        android:icon="@drawable/baseline_account_balance_24"
+        android:icon="@drawable/donation_icon"
         />
 
     <item
@@ -21,6 +21,6 @@
     <item
         android:id="@+id/navGallery"
         android:title="Photo Gallery"
-        android:icon="@drawable/baseline_image_24"
+        android:icon="@drawable/galllery_icon"
         />
 </menu>

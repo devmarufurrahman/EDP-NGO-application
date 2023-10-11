@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
         bottomNavigationView = findViewById(R.id.bottomNavigation);
         bottomNavigationView.setBackground(null);
 
+        bottomNavigationView.setItemIconTintList(null);
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -79,6 +80,8 @@ public class MainActivity extends AppCompatActivity {
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
         //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        navigationView.setItemIconTintList(null);
 
         // Drawar click event
         // Drawer item Click event ------
