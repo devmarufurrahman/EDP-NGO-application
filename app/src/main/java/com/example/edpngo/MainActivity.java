@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     ActionBarDrawerToggle toggle;
-    ImageView imageMenu;
+    ImageView imageMenu, logoEdp;
 
     BottomNavigationView bottomNavigationView;
 
@@ -41,6 +41,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        logoEdp = findViewById(R.id.logoEdp);
+
+
+//        logo click to home
+        logoEdp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openFragment(new HomeFragment());
+            }
+        });
 
         // Bottom Navigation view start ===========================
         bottomNavigationView = findViewById(R.id.bottomNavigation);

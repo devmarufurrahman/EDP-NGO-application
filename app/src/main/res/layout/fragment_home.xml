@@ -81,7 +81,7 @@
                             android:textSize="14sp"
                             android:drawablePadding="5dp"
                             android:text="01757000000"
-                            app:drawableStartCompat="@drawable/rsz_phone_icon"
+                            app:drawableStartCompat="@drawable/phone_icon"
                             />
 
                         <TextView
@@ -90,7 +90,7 @@
                             android:textSize="14sp"
                             android:drawablePadding="5dp"
                             android:text="@string/email_text"
-                            app:drawableStartCompat="@drawable/rsz_email_icon"
+                            app:drawableStartCompat="@drawable/email_icon"
 
                             />
 
