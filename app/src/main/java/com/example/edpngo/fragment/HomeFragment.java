@@ -23,7 +23,7 @@ import com.example.edpngo.R;
 public class HomeFragment extends Fragment {
 
     TextView seeAllTv;
-    Button featureBtn1, featureBtn2, featureBtn3, eventBtn1, eventBtn2, eventBtn3;
+    Button featureBtn1, featureBtn2, featureBtn3, eventBtn1, eventBtn2, eventBtn3, viewProfile;
     LinearLayout donateLayout, aboutLayout, contactLayout;
     public HomeFragment() {
         // Required empty public constructor
@@ -44,6 +44,20 @@ public class HomeFragment extends Fragment {
         eventBtn1 = view.findViewById(R.id.eventBtn1);
         eventBtn2 = view.findViewById(R.id.eventBtn2);
         eventBtn3 = view.findViewById(R.id.eventBtn3);
+        viewProfile = view.findViewById(R.id.viewProfileBtn);
+
+
+
+        // view profile
+        viewProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.fragmentContainer, new ProfileFragment());
+                fragmentTransaction.commit();
+            }
+        });
 
 
         // see all project

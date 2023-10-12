@@ -22,41 +22,84 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardElevation="2dp"
                 app:cardCornerRadius="10dp"
                 app:cardBackgroundColor="@color/white"
-                app:cardPreventCornerOverlap="true"
-                app:cardUseCompatPadding="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginHorizontal="2dp"
+                android:background="@drawable/donate_round_shape"
                 >
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:padding="20dp"
+                    android:padding="5dp"
                     android:gravity="center_horizontal"
+                    android:weightSum="3"
                     >
-                    <com.google.android.material.imageview.ShapeableImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:padding="4dp"
-                        app:shapeAppearance="@style/RoundFullImage"
-                        android:src="@drawable/avatar_image"
-                        app:strokeColor="@color/gray"
-                        app:strokeWidth="4dp"
-                        android:scaleType="fitCenter"
-                        />
 
-                    <TextView
-                        android:fontFamily="@font/font_family"
-                        android:layout_width="match_parent"
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        >
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:padding="4dp"
+                            app:shapeAppearance="@style/RoundFullImage"
+                            android:src="@drawable/avatar_image"
+                            app:strokeColor="@color/gray"
+                            app:strokeWidth="4dp"
+                            android:scaleType="fitCenter"
+                            />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_marginHorizontal="10dp"
+                        >
+
+                        <TextView
+                            android:fontFamily="@font/font_family"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mr. XXX"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Mr. XXX"
-                        android:textStyle="bold"
-                        android:textColor="@color/black"
-                        android:gravity="start"
-                        android:textSize="14sp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        >
 
-                        />
+                        <Button
+                            android:id="@+id/viewProfileBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="View Profile"
+                            app:backgroundTint="@color/orangeDark"
+                            android:background="@drawable/button_shape"
+                            android:fontFamily="@font/font_family"
+                            android:padding="0dp"
+                            android:textSize="12sp"
+                            />
+
+                    </LinearLayout>
+
+
 
                 </LinearLayout>
 
