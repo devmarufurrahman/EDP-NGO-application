@@ -88,7 +88,7 @@
                         <Button
                             android:id="@+id/viewProfileBtn"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_height="40dp"
                             android:text="View Profile"
                             app:backgroundTint="@color/orangeDark"
                             android:background="@drawable/button_shape"
@@ -112,7 +112,8 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:weightSum="2"
-                android:layout_marginBottom="3dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginHorizontal="3dp"
                 >
                 <TextView
                     android:fontFamily="@font/font_family"
@@ -120,7 +121,8 @@
                     android:layout_height="wrap_content"
                     android:text="Featured Projects"
                     android:textStyle="bold"
-                    android:textSize="18sp"
+                    android:textSize="15sp"
+                    android:textColor="@color/textColor"
                     android:layout_weight="1"
                     />
                 <TextView
@@ -129,8 +131,9 @@
                     android:layout_height="wrap_content"
                     android:text="See All"
                     android:textStyle="bold"
-                    android:textSize="18sp"
+                    android:textSize="15sp"
                     android:layout_weight="1"
+                    android:textColor="@color/textColor"
                     android:gravity="right"
                     android:id="@+id/seeAllProjects"
                     />
@@ -151,12 +154,12 @@
 
                     <LinearLayout
                         android:layout_width="230dp"
-                        android:layout_height="250dp"
+                        android:layout_height="235dp"
                         android:layout_margin="5dp"
                         android:background="@drawable/feature_post_shape"
                         android:elevation="2dp"
                         android:orientation="vertical"
-                        android:paddingBottom="10dp">
+                        >
 
                         <com.google.android.material.imageview.ShapeableImageView
                             android:layout_width="match_parent"
@@ -168,20 +171,21 @@
 
                         <TextView
                             android:fontFamily="@font/font_family"
-
+                            android:textColor="@color/textColor"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginVertical="7dp"
                             android:paddingLeft="10dp"
                             android:text="@string/festival_program"
-                            android:textSize="16sp"
+                            android:textSize="14sp"
                             android:textStyle="bold" />
 
                         <Button
                             android:fontFamily="@font/font_family"
                             android:id="@+id/featureProjectBtn1"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="40dp"
+                            android:textSize="12dp"
                             android:layout_gravity="center"
                             android:layout_marginHorizontal="10dp"
                             android:background="@drawable/button_shape"
@@ -193,12 +197,11 @@
 
                     <LinearLayout
                         android:layout_width="230dp"
-                        android:layout_height="250dp"
+                        android:layout_height="235dp"
                         android:background="@drawable/feature_post_shape"
                         android:orientation="vertical"
                         android:elevation="2dp"
                         android:layout_margin="5dp"
-                        android:paddingBottom="10dp"
                         >
                         <com.google.android.material.imageview.ShapeableImageView
                             android:layout_width="match_parent"
@@ -211,10 +214,10 @@
 
                         <TextView
                             android:fontFamily="@font/font_family"
-
+                            android:textColor="@color/textColor"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="16sp"
+                            android:textSize="14sp"
                             android:textStyle="bold"
                             android:text="@string/computer_courses"
                             android:paddingLeft="10dp"
@@ -225,7 +228,8 @@
                             android:id="@+id/featureProjectBtn2"
                             android:layout_width="match_parent"
                             android:layout_marginHorizontal="10dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="40dp"
+                            android:textSize="12dp"
                             android:text="@string/view_details"
                             android:layout_gravity="center"
                             android:background="@drawable/button_shape"
@@ -237,12 +241,11 @@
 
                     <LinearLayout
                         android:layout_width="230dp"
-                        android:layout_height="250dp"
+                        android:layout_height="235dp"
                         android:background="@drawable/feature_post_shape"
                         android:orientation="vertical"
                         android:elevation="2dp"
                         android:layout_margin="5dp"
-                        android:paddingBottom="10dp"
                         >
                         <com.google.android.material.imageview.ShapeableImageView
                             android:layout_width="match_parent"
@@ -257,7 +260,8 @@
                             android:fontFamily="@font/font_family"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="16sp"
+                            android:textSize="14sp"
+                            android:textColor="@color/textColor"
                             android:textStyle="bold"
                             android:text="@string/home_health_aide"
                             android:paddingLeft="10dp"
@@ -268,7 +272,8 @@
                             android:id="@+id/featureProjectBtn3"
                             android:layout_width="match_parent"
                             android:layout_marginHorizontal="10dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="40dp"
+                            android:textSize="12dp"
                             android:text="@string/view_details"
                             android:layout_gravity="center"
                             android:background="@drawable/button_shape"
@@ -299,7 +304,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="Edp Ngo Activity"
-                    android:textSize="16sp"
+                    android:textSize="15sp"
                     android:textStyle="bold"
                     android:textColor="@color/textColor"
                     android:layout_margin="10dp"
@@ -334,7 +339,7 @@
                             android:layout_height="wrap_content"
                             android:text="Donate"
                             android:textStyle="bold"
-                            android:textSize="13sp"
+                            android:textSize="12sp"
                             android:textColor="@color/textColor"
                             />
 
@@ -362,7 +367,7 @@
                             android:layout_height="wrap_content"
                             android:text="Projects"
                             android:textStyle="bold"
-                            android:textSize="13sp"
+                            android:textSize="12sp"
                             android:textColor="@color/textColor"
                             />
 
@@ -389,7 +394,7 @@
                             android:layout_height="wrap_content"
                             android:text="Gallery"
                             android:textStyle="bold"
-                            android:textSize="13sp"
+                            android:textSize="12sp"
                             android:textColor="@color/textColor"
                             />
 
@@ -425,7 +430,7 @@
                             android:layout_height="wrap_content"
                             android:text="Our Blogs"
                             android:textStyle="bold"
-                            android:textSize="13sp"
+                            android:textSize="12sp"
                             android:textColor="@color/textColor"
                             />
 
@@ -453,7 +458,7 @@
                             android:layout_height="wrap_content"
                             android:text="@string/about_us"
                             android:textStyle="bold"
-                            android:textSize="13sp"
+                            android:textSize="12sp"
                             android:textColor="@color/textColor"
                             />
 
@@ -481,7 +486,7 @@
                             android:layout_height="wrap_content"
                             android:text="@string/contact_us"
                             android:textStyle="bold"
-                            android:textSize="13sp"
+                            android:textSize="12sp"
                             android:textColor="@color/textColor"
                             />
 
@@ -498,20 +503,19 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:paddingHorizontal="7dp"
-                android:paddingBottom="10dp"
+                android:paddingBottom="7dp"
                 android:background="@drawable/donate_round_shape"
-                android:layout_marginHorizontal="3dp"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="10dp"
                 >
                 <TextView
                     android:fontFamily="@font/font_family"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Peoples Donate"
-                    android:textSize="16sp"
+                    android:text="People Donate"
+                    android:textSize="15sp"
                     android:textStyle="bold"
-                    android:textColor="@color/black"
+                    android:textColor="@color/textColor"
                     android:layout_margin="10dp"
                     />
 
@@ -522,13 +526,13 @@
                     android:weightSum="2"
                     >
                     <LinearLayout
-                        android:layout_width="150dp"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:gravity="center_vertical"
                         android:background="@drawable/donate_round_shape"
                         android:padding="6dp"
-                        android:layout_margin="7dp"
+                        android:layout_margin="5dp"
                         android:layout_weight="1"
                         >
                         <LinearLayout
@@ -549,10 +553,10 @@
                                 android:fontFamily="@font/font_family"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Total Donate"
-                                android:textColor="@color/black"
+                                android:text="Donation"
                                 android:textStyle="bold"
-                                android:textSize="14sp"
+                                android:textSize="12sp"
+                                android:textColor="@color/textColor"
                                 />
                         </LinearLayout>
 
@@ -560,9 +564,9 @@
                             android:fontFamily="@font/font_family"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="18sp"
+                            android:textSize="14sp"
                             android:textStyle="bold"
-                            android:textColor="@color/black"
+                            android:textColor="@color/textColor"
                             android:text="0.00"
                             android:paddingEnd="5dp"
                             android:gravity="end"
@@ -572,13 +576,13 @@
 
 
                     <LinearLayout
-                        android:layout_width="150dp"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:gravity="center_vertical"
                         android:background="@drawable/donate_round_shape"
                         android:padding="6dp"
-                        android:layout_margin="7dp"
+                        android:layout_margin="5dp"
                         android:layout_weight="1"
                         >
                         <LinearLayout
@@ -599,10 +603,10 @@
                                 android:fontFamily="@font/font_family"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Total Donors"
-                                android:textColor="@color/black"
+                                android:text="Donors"
                                 android:textStyle="bold"
-                                android:textSize="14sp"
+                                android:textSize="12sp"
+                                android:textColor="@color/textColor"
                                 />
                         </LinearLayout>
 
@@ -610,9 +614,9 @@
                             android:fontFamily="@font/font_family"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="18sp"
+                            android:textSize="14sp"
                             android:textStyle="bold"
-                            android:textColor="@color/black"
+                            android:textColor="@color/textColor"
                             android:text="0.00"
                             android:gravity="end"
                             android:paddingEnd="5dp"
@@ -629,13 +633,13 @@
                     android:weightSum="2"
                     >
                     <LinearLayout
-                        android:layout_width="150dp"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:gravity="center_vertical"
                         android:background="@drawable/donate_round_shape"
                         android:padding="6dp"
-                        android:layout_margin="7dp"
+                        android:layout_margin="5dp"
                         android:layout_weight="1"
                         >
                         <LinearLayout
@@ -657,9 +661,9 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Our Goals"
-                                android:textColor="@color/black"
                                 android:textStyle="bold"
-                                android:textSize="14sp"
+                                android:textSize="12sp"
+                                android:textColor="@color/textColor"
                                 />
                         </LinearLayout>
 
@@ -667,9 +671,9 @@
                             android:fontFamily="@font/font_family"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="18sp"
+                            android:textSize="14sp"
                             android:textStyle="bold"
-                            android:textColor="@color/black"
+                            android:textColor="@color/textColor"
                             android:text="0.00"
                             android:gravity="end"
                             android:paddingEnd="5dp"
@@ -679,13 +683,13 @@
 
 
                     <LinearLayout
-                        android:layout_width="150dp"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:gravity="center_vertical"
                         android:background="@drawable/donate_round_shape"
                         android:padding="6dp"
-                        android:layout_margin="7dp"
+                        android:layout_margin="5dp"
                         android:layout_weight="1"
                         >
                         <LinearLayout
@@ -707,9 +711,9 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Our Projects"
-                                android:textColor="@color/black"
                                 android:textStyle="bold"
-                                android:textSize="14sp"
+                                android:textSize="12sp"
+                                android:textColor="@color/textColor"
                                 />
                         </LinearLayout>
 
@@ -717,9 +721,9 @@
                             android:fontFamily="@font/font_family"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="18sp"
+                            android:textSize="14sp"
                             android:textStyle="bold"
-                            android:textColor="@color/black"
+                            android:textColor="@color/textColor"
                             android:text="0.00"
                             android:gravity="end"
                             android:paddingEnd="5dp"
