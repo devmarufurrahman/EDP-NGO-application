@@ -19,19 +19,54 @@
             android:layout_margin="10dp"
             >
 
-                <androidx.cardview.widget.CardView
+            <!--            About edp -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="15dp"
+                >
+                <TextView
+                    android:fontFamily="@font/font_family"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/about_us"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_marginVertical="7dp"
+                    android:textColor="@color/textColor"
+                    />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/feature_image2"
+                    android:scaleType="centerCrop"
+                    />
+
+                <TextView
+                    android:fontFamily="@font/font_family"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:elevation="5dp"
-                    app:cardCornerRadius="10dp"
-                    app:cardBackgroundColor="@color/white"
-                    app:cardPreventCornerOverlap="true"
-                    app:cardUseCompatPadding="true"
-                    >
+                    android:textSize="13sp"
+                    android:textColor="@color/textColor"
+                    android:text="@string/about_text"
+                    android:justificationMode="inter_word"
+                    android:layout_marginTop="7dp"
+                    />
+
+
+            </LinearLayout>
+
+
+<!--            our mission and vision-->
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
+                        android:layout_marginBottom="5dp"
                         >
 
                         <com.denzcoskun.imageslider.ImageSlider
@@ -45,32 +80,32 @@
                             android:layout_marginBottom="10dp"
                             />
 
-                        <Button
-                            android:fontFamily="@font/font_family"
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Our Mission"
-                            app:backgroundTint="@color/orangeDark"
-                            android:layout_gravity="center"
-                            android:layout_marginHorizontal="15dp"
-                            android:background="@drawable/button_shape"
-                            android:layout_marginBottom="11dp"
+                            android:gravity="center"
+                            android:text="@string/our_mission"
+                            android:textSize="16sp"
+                            android:textColor="@color/textColor"
+                            android:paddingBottom="5dp"
+                            android:textStyle="bold"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/mission_desc"
+                            android:textSize="13sp"
+                            android:textColor="@color/textColor"
+                            android:paddingHorizontal="2dp"
+                            android:paddingBottom="9dp"
+                            android:justificationMode="inter_word"
                             />
 
                     </LinearLayout>
 
-                </androidx.cardview.widget.CardView>
 
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:elevation="5dp"
-                    app:cardCornerRadius="10dp"
-                    app:cardBackgroundColor="@color/white"
-                    app:cardPreventCornerOverlap="true"
-                    app:cardUseCompatPadding="true"
-                    >
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -89,61 +124,32 @@
                             android:layout_marginBottom="10dp"
                             />
 
-                        <Button
-                            android:fontFamily="@font/font_family"
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Our Vision"
-                            app:backgroundTint="@color/orangeDark"
-                            android:layout_gravity="center"
-                            android:layout_marginHorizontal="15dp"
-                            android:background="@drawable/button_shape"
-                            android:layout_marginBottom="11dp"
+                            android:gravity="center"
+                            android:text="@string/our_vision"
+                            android:textSize="16sp"
+                            android:textColor="@color/textColor"
+                            android:paddingBottom="5dp"
+                            android:textStyle="bold"
                             />
 
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/mission_desc"
+                            android:textSize="13sp"
+                            android:textColor="@color/textColor"
+                            android:paddingHorizontal="2dp"
+                            android:paddingBottom="9dp"
+                            android:justificationMode="inter_word"
+                            />
+
+
                     </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
-
-
-<!--            About edp -->
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginBottom="15dp"
-                >
-                <TextView
-                    android:fontFamily="@font/font_family"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/about_us"
-                    android:textStyle="bold"
-                    android:textSize="20sp"
-                    android:layout_marginVertical="7dp"
-                    android:textColor="@color/black"
-                    />
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="300dp"
-                    android:src="@drawable/feature_image2"
-                    android:scaleType="centerCrop"
-                    />
-
-                <TextView
-                    android:fontFamily="@font/font_family"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="15sp"
-                    android:text="@string/about_text"
-                    android:justificationMode="inter_word"
-                    />
-
-
-            </LinearLayout>
-
 
 <!--            director view ===============-->
             <HorizontalScrollView
@@ -167,6 +173,7 @@
                         app:cardBackgroundColor="@color/white"
                         app:cardPreventCornerOverlap="true"
                         app:cardUseCompatPadding="true"
+                        android:id="@+id/directorDetails1"
                         >
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -192,7 +199,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Mr. XXX"
-                                android:textColor="@color/black"
+                                android:textColor="@color/textColor"
                                 android:textSize="16sp"
                                 android:textStyle="bold"
                                 android:gravity="center"
@@ -205,8 +212,8 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Honorable President "
-                                android:textColor="@color/black"
-                                android:textSize="14sp"
+                                android:textColor="@color/textColor"
+                                android:textSize="13sp"
                                 android:gravity="center"
                                 />
 
@@ -225,6 +232,7 @@
                         app:cardBackgroundColor="@color/white"
                         app:cardPreventCornerOverlap="true"
                         app:cardUseCompatPadding="true"
+                        android:id="@+id/directorDetails2"
                         >
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -250,7 +258,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Mr. XXX"
-                                android:textColor="@color/black"
+                                android:textColor="@color/textColor"
                                 android:textSize="16sp"
                                 android:textStyle="bold"
                                 android:gravity="center"
@@ -263,8 +271,8 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Direcotr"
-                                android:textColor="@color/black"
-                                android:textSize="14sp"
+                                android:textColor="@color/textColor"
+                                android:textSize="13sp"
                                 android:gravity="center"
                                 />
 
@@ -282,6 +290,7 @@
                         app:cardBackgroundColor="@color/white"
                         app:cardPreventCornerOverlap="true"
                         app:cardUseCompatPadding="true"
+                        android:id="@+id/directorDetails3"
                         >
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -307,7 +316,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Mr. XXX"
-                                android:textColor="@color/black"
+                                android:textColor="@color/textColor"
                                 android:textSize="16sp"
                                 android:textStyle="bold"
                                 android:gravity="center"
@@ -320,8 +329,8 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Founder and Secretary "
-                                android:textColor="@color/black"
-                                android:textSize="14sp"
+                                android:textColor="@color/textColor"
+                                android:textSize="13sp"
                                 android:gravity="center"
                                 />
 
