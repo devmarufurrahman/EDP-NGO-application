@@ -53,12 +53,11 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardElevation="5dp"
+                app:cardElevation="1dp"
                 app:cardCornerRadius="10dp"
                 app:cardBackgroundColor="@color/white"
-                app:cardMaxElevation="12dp"
                 app:cardPreventCornerOverlap="true"
-                app:cardUseCompatPadding="true"
+                android:layout_marginVertical="15dp"
                 >
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -86,6 +85,7 @@
                         />
 
                     <TextView
+                        android:paddingHorizontal="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/english_desc"
@@ -95,6 +95,7 @@
                         android:layout_marginBottom="7dp"
                         android:gravity="center"
                         android:fontFamily="@font/font_family"
+                        android:justificationMode="inter_word"
                         />
 
                     <Button
@@ -121,12 +122,12 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardElevation="5dp"
+                app:cardElevation="1dp"
                 app:cardCornerRadius="10dp"
                 app:cardBackgroundColor="@color/white"
                 app:cardMaxElevation="12dp"
                 app:cardPreventCornerOverlap="true"
-                app:cardUseCompatPadding="true"
+                android:layout_marginBottom="15dp"
                 >
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -163,7 +164,8 @@
                         android:layout_marginBottom="7dp"
                         android:gravity="center"
                         android:fontFamily="@font/font_family"
-                        android:paddingHorizontal="4dp"
+                        android:paddingHorizontal="5dp"
+                        android:justificationMode="inter_word"
                         />
 
 
@@ -192,12 +194,12 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardElevation="5dp"
+                app:cardElevation="1dp"
                 app:cardCornerRadius="10dp"
                 app:cardBackgroundColor="@color/white"
                 app:cardMaxElevation="12dp"
                 app:cardPreventCornerOverlap="true"
-                app:cardUseCompatPadding="true"
+                android:layout_marginBottom="15dp"
                 >
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -224,6 +226,7 @@
                         />
 
                     <TextView
+                        android:paddingHorizontal="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/health_desc"
@@ -233,6 +236,7 @@
                         android:layout_marginBottom="7dp"
                         android:gravity="center"
                         android:fontFamily="@font/font_family"
+                        android:justificationMode="inter_word"
                         />
 
 
@@ -260,12 +264,12 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardElevation="5dp"
+                app:cardElevation="1dp"
                 app:cardCornerRadius="10dp"
                 app:cardBackgroundColor="@color/white"
                 app:cardMaxElevation="12dp"
                 app:cardPreventCornerOverlap="true"
-                app:cardUseCompatPadding="true"
+                android:layout_marginBottom="15dp"
                 >
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -293,6 +297,7 @@
                         />
 
                     <TextView
+                        android:paddingHorizontal="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/fashion_desc"
@@ -302,6 +307,7 @@
                         android:layout_marginBottom="7dp"
                         android:gravity="center"
                         android:fontFamily="@font/font_family"
+                        android:justificationMode="inter_word"
                         />
 
 
@@ -330,12 +336,11 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardElevation="5dp"
+                app:cardElevation="1dp"
                 app:cardCornerRadius="10dp"
+                android:layout_marginBottom="15dp"
                 app:cardBackgroundColor="@color/white"
-                app:cardMaxElevation="12dp"
                 app:cardPreventCornerOverlap="true"
-                app:cardUseCompatPadding="true"
                 >
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -363,6 +368,7 @@
                         />
 
                     <TextView
+                        android:paddingHorizontal="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/law_desc"
@@ -372,6 +378,7 @@
                         android:layout_marginBottom="7dp"
                         android:gravity="center"
                         android:fontFamily="@font/font_family"
+                        android:justificationMode="inter_word"
                         />
 
 
@@ -400,12 +407,11 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardElevation="5dp"
+                app:cardElevation="1dp"
                 app:cardCornerRadius="10dp"
                 app:cardBackgroundColor="@color/white"
-                app:cardMaxElevation="12dp"
                 app:cardPreventCornerOverlap="true"
-                app:cardUseCompatPadding="true"
+                android:layout_marginBottom="15dp"
                 >
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -433,6 +439,7 @@
                         />
 
                     <TextView
+                        android:paddingHorizontal="5dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/festival_desc"
@@ -442,6 +449,7 @@
                         android:layout_marginBottom="7dp"
                         android:gravity="center"
                         android:fontFamily="@font/font_family"
+                        android:justificationMode="inter_word"
                         />
 
 
