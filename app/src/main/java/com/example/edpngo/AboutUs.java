@@ -19,7 +19,7 @@ public class AboutUs extends AppCompatActivity {
     ImageSlider missionSlider, visionSlider;
     ArrayList<SlideModel> imgMission = new ArrayList<>();
     CardView directorView1, directorView2, directorView3;
-    TextView appbarPresident, appbarDirector, appbarFounder;
+    TextView appbarPresident, appbarDirector, appbarFounder, presidentName, directorName, founderName;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +32,9 @@ public class AboutUs extends AppCompatActivity {
         appbarPresident = findViewById(R.id.positionPresident);
         appbarDirector = findViewById(R.id.positionDirector);
         appbarFounder = findViewById(R.id.positionFounder);
+        presidentName = findViewById(R.id.presidentName);
+        directorName = findViewById(R.id.directorName);
+        founderName = findViewById(R.id.founderName);
 
 
         // app toolbar
@@ -49,6 +52,10 @@ public class AboutUs extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(AboutUs.this, DirectorDetails.class);
                 intent.putExtra("appbarName",appbarPresident.getText().toString());
+                intent.putExtra("name",presidentName.getText().toString());
+                intent.putExtra("desc",getString(R.string.president_desc));
+                intent.putExtra("address",getString(R.string.address_president));
+                intent.putExtra("email",getString(R.string.president_email));
                 startActivity(intent);
             }
         });
@@ -57,6 +64,10 @@ public class AboutUs extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(AboutUs.this, DirectorDetails.class);
                 intent.putExtra("appbarName",appbarDirector.getText().toString());
+                intent.putExtra("name",directorName.getText().toString());
+                intent.putExtra("desc",getString(R.string.director_desc));
+                intent.putExtra("address",getString(R.string.address_director));
+                intent.putExtra("email",getString(R.string.director_email));
                 startActivity(intent);
             }
         });
@@ -65,6 +76,10 @@ public class AboutUs extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(AboutUs.this, DirectorDetails.class);
                 intent.putExtra("appbarName",appbarFounder.getText().toString());
+                intent.putExtra("name",founderName.getText().toString());
+                intent.putExtra("desc",getString(R.string.founder_desc));
+                intent.putExtra("address",getString(R.string.address_founder));
+                intent.putExtra("email",getString(R.string.founder_email));
                 startActivity(intent);
             }
         });

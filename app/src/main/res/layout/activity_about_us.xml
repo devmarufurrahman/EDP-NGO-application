@@ -206,10 +206,11 @@
                                 />
 
                             <TextView
+                                android:id="@+id/presidentName"
                                 android:fontFamily="@font/font_family"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Mr. XXX"
+                                android:text="MS Alam"
                                 android:textColor="@color/textColor"
                                 android:textSize="16sp"
                                 android:textStyle="bold"
@@ -266,10 +267,11 @@
                                 />
 
                             <TextView
+                                android:id="@+id/directorName"
                                 android:fontFamily="@font/font_family"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Mr. XXX"
+                                android:text="Ashikur Rahman Ashik"
                                 android:textColor="@color/textColor"
                                 android:textSize="16sp"
                                 android:textStyle="bold"
@@ -325,10 +327,11 @@
                                 />
 
                             <TextView
+                                android:id="@+id/founderName"
                                 android:fontFamily="@font/font_family"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Mr. XXX"
+                                android:text="Ambia Begum"
                                 android:textColor="@color/textColor"
                                 android:textSize="16sp"
                                 android:textStyle="bold"
