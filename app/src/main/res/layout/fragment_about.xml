@@ -1,21 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".AboutUs">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.About">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/aboutToolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="@color/appBarColor"
-        android:elevation="4dp"
-        android:layout_marginBottom="3dp"
-        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -368,4 +358,5 @@
 
     </ScrollView>
 
-</LinearLayout>
+
+</FrameLayout>

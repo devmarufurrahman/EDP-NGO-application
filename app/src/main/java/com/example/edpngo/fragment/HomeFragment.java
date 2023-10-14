@@ -14,7 +14,6 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.example.edpngo.AboutUs;
 import com.example.edpngo.ContactActivity;
 import com.example.edpngo.DonatePaypal;
 import com.example.edpngo.ProjectDetails;
@@ -137,8 +136,10 @@ public class HomeFragment extends Fragment {
         aboutLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), AboutUs.class);
-                startActivity(intent);
+                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.fragmentContainer, new About());
+                fragmentTransaction.commit();
             }
 
         });

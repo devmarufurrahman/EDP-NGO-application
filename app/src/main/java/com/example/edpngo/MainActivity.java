@@ -16,6 +16,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.example.edpngo.fragment.About;
 import com.example.edpngo.fragment.DonateFragment;
 import com.example.edpngo.fragment.HomeFragment;
 import com.example.edpngo.fragment.ProfileFragment;
@@ -109,8 +110,7 @@ public class MainActivity extends AppCompatActivity {
 
                 }else if(id == R.id.navAbout){
                     // about menu
-                    Intent intent = new Intent(MainActivity.this,AboutUs.class);
-                    startActivity(intent);
+                    openFragment(new About());
 
                 } else if(id == R.id.navContact){
                     // contact menu
