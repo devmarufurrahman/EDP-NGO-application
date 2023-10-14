@@ -16,13 +16,16 @@
         android:theme="@style/Theme.EDPNGO"
         tools:targetApi="31">
         <activity
-            android:name=".ProjectDetails"
-            android:parentActivityName=".MainActivity"
+            android:name=".DirectorDetails"
             android:exported="false" />
         <activity
+            android:name=".ProjectDetails"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
             android:name=".DonatePaypal"
-            android:parentActivityName=".MainActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".ContactActivity"
             android:exported="false"
