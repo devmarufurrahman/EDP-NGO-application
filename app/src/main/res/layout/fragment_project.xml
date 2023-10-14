@@ -80,7 +80,19 @@
                         android:textColor="@color/textColor"
                         android:textSize="15sp"
                         android:textStyle="bold"
-                        android:layout_marginVertical="10dp"
+                        android:layout_marginVertical="7dp"
+                        android:gravity="center"
+                        android:fontFamily="@font/font_family"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/english_desc"
+                        android:maxLines="2"
+                        android:textColor="@color/textColor"
+                        android:textSize="12sp"
+                        android:layout_marginBottom="7dp"
                         android:gravity="center"
                         android:fontFamily="@font/font_family"
                         />
@@ -137,9 +149,24 @@
                         android:textSize="15sp"
                         android:fontFamily="@font/font_family"
                         android:textStyle="bold"
-                        android:layout_marginVertical="10dp"
+                        android:layout_marginVertical="7dp"
                         android:gravity="center"
                         />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/computer_desc"
+                        android:maxLines="2"
+                        android:textColor="@color/textColor"
+                        android:textSize="12sp"
+                        android:layout_marginBottom="7dp"
+                        android:gravity="center"
+                        android:fontFamily="@font/font_family"
+                        android:paddingHorizontal="4dp"
+                        />
+
+
 
                     <Button
                         android:id="@+id/computerEnrollBtn"
@@ -192,9 +219,23 @@
                         android:textColor="@color/textColor"
                         android:textSize="16sp"
                         android:textStyle="bold"
-                        android:layout_marginVertical="10dp"
+                        android:layout_marginVertical="7dp"
                         android:gravity="center"
                         />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/health_desc"
+                        android:maxLines="2"
+                        android:textColor="@color/textColor"
+                        android:textSize="12sp"
+                        android:layout_marginBottom="7dp"
+                        android:gravity="center"
+                        android:fontFamily="@font/font_family"
+                        />
+
+
 
                     <Button
                         android:id="@+id/healthEnrollBtn"
@@ -247,9 +288,23 @@
                         android:textSize="16sp"
                         android:fontFamily="@font/font_family"
                         android:textStyle="bold"
-                        android:layout_marginVertical="10dp"
+                        android:layout_marginVertical="7dp"
                         android:gravity="center"
                         />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fashion_desc"
+                        android:maxLines="2"
+                        android:textColor="@color/textColor"
+                        android:textSize="12sp"
+                        android:layout_marginBottom="7dp"
+                        android:gravity="center"
+                        android:fontFamily="@font/font_family"
+                        />
+
+
 
                     <Button
                         android:id="@+id/fashionEnrollBtn"
@@ -302,10 +357,24 @@
                         android:textColor="@color/textColor"
                         android:textSize="16sp"
                         android:textStyle="bold"
-                        android:layout_marginVertical="10dp"
+                        android:layout_marginVertical="7dp"
                         android:gravity="center"
                         android:fontFamily="@font/font_family"
                         />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/law_desc"
+                        android:maxLines="2"
+                        android:textColor="@color/textColor"
+                        android:textSize="12sp"
+                        android:layout_marginBottom="7dp"
+                        android:gravity="center"
+                        android:fontFamily="@font/font_family"
+                        />
+
+
 
                     <Button
                         android:id="@+id/lawEnrollBtn"
@@ -358,10 +427,24 @@
                         android:textColor="@color/textColor"
                         android:textSize="16sp"
                         android:textStyle="bold"
-                        android:layout_marginVertical="10dp"
+                        android:layout_marginVertical="7dp"
                         android:gravity="center"
                         android:fontFamily="@font/font_family"
                         />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/festival_desc"
+                        android:maxLines="2"
+                        android:textColor="@color/textColor"
+                        android:textSize="12sp"
+                        android:layout_marginBottom="7dp"
+                        android:gravity="center"
+                        android:fontFamily="@font/font_family"
+                        />
+
+
 
                     <Button
                         android:id="@+id/festivalEnrollBtn"

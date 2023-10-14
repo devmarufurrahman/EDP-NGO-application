@@ -15,7 +15,7 @@ public class ProjectDetails extends AppCompatActivity {
     String title, description;
     ImageView imgIv;
     TextView titleTv, descTv;
-    ShapeableImageView shapeableImageView;
+    ShapeableImageView shapeableImageView, shapeableImageView2, shapeableImageView3;
     int image = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,9 +25,11 @@ public class ProjectDetails extends AppCompatActivity {
         titleTv = findViewById(R.id.projectDetailTitle);
         descTv = findViewById(R.id.projectDetailDesc);
         shapeableImageView = findViewById(R.id.courseEnrollImg);
+        shapeableImageView2 = findViewById(R.id.courseEnrollImg2);
+        shapeableImageView3 = findViewById(R.id.courseEnrollImg3);
+
 
         // Toolbar
-
         Toolbar toolbar = findViewById(R.id.my_toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Project Details");
@@ -45,6 +47,8 @@ public class ProjectDetails extends AppCompatActivity {
         descTv.setText(description);
 
         shapeableImageView.setImageResource(image);
+        shapeableImageView2.setImageResource(image);
+        shapeableImageView3.setImageResource(image);
 
     }
 }
