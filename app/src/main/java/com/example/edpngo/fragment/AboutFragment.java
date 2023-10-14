@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.constants.ScaleTypes;
@@ -24,6 +25,7 @@ public class AboutFragment extends Fragment {
     ImageSlider missionSlider, visionSlider;
     ArrayList<SlideModel> imgMission = new ArrayList<>();
     CardView directorView1, directorView2, directorView3;
+    TextView appbarPresident, appbarDirector, appbarFounder;
 
 
     public AboutFragment() {
@@ -41,6 +43,9 @@ public class AboutFragment extends Fragment {
         directorView1 = view.findViewById(R.id.directorDetails1);
         directorView2 = view.findViewById(R.id.directorDetails2);
         directorView3 = view.findViewById(R.id.directorDetails3);
+        appbarPresident = view.findViewById(R.id.positionPresident);
+        appbarDirector = view.findViewById(R.id.positionDirector);
+        appbarFounder = view.findViewById(R.id.positionFounder);
 
 
 //        card view director activity
@@ -48,20 +53,24 @@ public class AboutFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(), DirectorDetails.class);
-
+                intent.putExtra("appbarName",appbarPresident.getText().toString());
                 startActivity(intent);
             }
         });
         directorView2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(getActivity(), DirectorDetails.class);
+                intent.putExtra("appbarName",appbarDirector.getText().toString());
+                startActivity(intent);
             }
         });
         directorView3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(getActivity(), DirectorDetails.class);
+                intent.putExtra("appbarName",appbarFounder.getText().toString());
+                startActivity(intent);
             }
         });
 
