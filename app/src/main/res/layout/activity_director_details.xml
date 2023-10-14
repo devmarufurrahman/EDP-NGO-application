@@ -17,5 +17,56 @@
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            >
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:padding="4dp"
+                app:shapeAppearance="@style/RoundFullImage"
+                android:src="@drawable/avatar_image"
+                app:strokeColor="@color/gray"
+                app:strokeWidth="4dp"
+                android:scaleType="fitCenter"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mr. XXX"
+                android:textStyle="bold"
+                android:textColor="@color/textColor"
+                android:gravity="center"
+                android:textSize="19sp"
+                android:fontFamily="@font/font_family"
+                />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/president_desc"
+                android:textColor="@color/textColor"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:fontFamily="@font/font_family"
+                android:justificationMode="inter_word"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>

@@ -1,5 +1,6 @@
 package com.example.edpngo.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.cardview.widget.CardView;
@@ -12,6 +13,7 @@ import android.view.ViewGroup;
 import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.constants.ScaleTypes;
 import com.denzcoskun.imageslider.models.SlideModel;
+import com.example.edpngo.DirectorDetails;
 import com.example.edpngo.R;
 
 import java.util.ArrayList;
@@ -45,7 +47,9 @@ public class AboutFragment extends Fragment {
         directorView1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), DirectorDetails.class);
 
+                startActivity(intent);
             }
         });
         directorView2.setOnClickListener(new View.OnClickListener() {
