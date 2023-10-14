@@ -1,10 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".fragment.AboutFragment">
+    android:orientation="vertical"
+    tools:context=".AboutUs">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/aboutToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/appBarColor"
+        android:elevation="4dp"
+        android:layout_marginBottom="3dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -60,98 +71,98 @@
             </LinearLayout>
 
 
-<!--            our mission and vision-->
+            <!--            our mission and vision-->
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_marginBottom="5dp"
-                        >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="5dp"
+                >
 
-                        <com.denzcoskun.imageslider.ImageSlider
-                            android:layout_width="wrap_content"
-                            android:layout_height="200dp"
-                            app:iss_auto_cycle="true"
-                            app:iss_delay="1000"
-                            app:iss_period="1000"
-                            app:iss_text_align="CENTER"
-                            android:id="@+id/missionSlider"
-                            android:layout_marginBottom="10dp"
-                            />
+                <com.denzcoskun.imageslider.ImageSlider
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    app:iss_auto_cycle="true"
+                    app:iss_delay="1000"
+                    app:iss_period="1000"
+                    app:iss_text_align="CENTER"
+                    android:id="@+id/missionSlider"
+                    android:layout_marginBottom="10dp"
+                    />
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:text="@string/our_mission"
-                            android:textSize="16sp"
-                            android:textColor="@color/textColor"
-                            android:paddingBottom="5dp"
-                            android:textStyle="bold"
-                            />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/our_mission"
+                    android:textSize="16sp"
+                    android:textColor="@color/textColor"
+                    android:paddingBottom="5dp"
+                    android:textStyle="bold"
+                    />
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:text="@string/mission_desc"
-                            android:textSize="13sp"
-                            android:textColor="@color/textColor"
-                            android:paddingHorizontal="2dp"
-                            android:paddingBottom="9dp"
-                            android:justificationMode="inter_word"
-                            />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/mission_desc"
+                    android:textSize="13sp"
+                    android:textColor="@color/textColor"
+                    android:paddingHorizontal="2dp"
+                    android:paddingBottom="9dp"
+                    android:justificationMode="inter_word"
+                    />
 
-                    </LinearLayout>
-
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        >
+            </LinearLayout>
 
 
-                        <com.denzcoskun.imageslider.ImageSlider
-                            android:layout_width="wrap_content"
-                            android:layout_height="200dp"
-                            app:iss_auto_cycle="true"
-                            app:iss_delay="1000"
-                            app:iss_period="1000"
-                            app:iss_text_align="CENTER"
-                            android:id="@+id/visionSlider"
-                            android:layout_marginBottom="10dp"
-                            />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:text="@string/our_vision"
-                            android:textSize="16sp"
-                            android:textColor="@color/textColor"
-                            android:paddingBottom="5dp"
-                            android:textStyle="bold"
-                            />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
 
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:text="@string/mission_desc"
-                            android:textSize="13sp"
-                            android:textColor="@color/textColor"
-                            android:paddingHorizontal="2dp"
-                            android:paddingBottom="9dp"
-                            android:justificationMode="inter_word"
-                            />
+                <com.denzcoskun.imageslider.ImageSlider
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    app:iss_auto_cycle="true"
+                    app:iss_delay="1000"
+                    app:iss_period="1000"
+                    app:iss_text_align="CENTER"
+                    android:id="@+id/visionSlider"
+                    android:layout_marginBottom="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/our_vision"
+                    android:textSize="16sp"
+                    android:textColor="@color/textColor"
+                    android:paddingBottom="5dp"
+                    android:textStyle="bold"
+                    />
 
 
-                    </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/mission_desc"
+                    android:textSize="13sp"
+                    android:textColor="@color/textColor"
+                    android:paddingHorizontal="2dp"
+                    android:paddingBottom="9dp"
+                    android:justificationMode="inter_word"
+                    />
 
-<!--            director view ===============-->
+
+            </LinearLayout>
+
+            <!--            director view ===============-->
             <HorizontalScrollView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -354,4 +365,4 @@
 
     </ScrollView>
 
-</FrameLayout>
+</LinearLayout>

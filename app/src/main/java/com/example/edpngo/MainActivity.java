@@ -11,14 +11,11 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.example.edpngo.fragment.AboutFragment;
-import com.example.edpngo.fragment.ContactFragment;
 import com.example.edpngo.fragment.DonateFragment;
 import com.example.edpngo.fragment.HomeFragment;
 import com.example.edpngo.fragment.ProfileFragment;
@@ -112,7 +109,8 @@ public class MainActivity extends AppCompatActivity {
 
                 }else if(id == R.id.navAbout){
                     // about menu
-                    openFragment(new AboutFragment());
+                    Intent intent = new Intent(MainActivity.this,AboutUs.class);
+                    startActivity(intent);
 
                 } else if(id == R.id.navContact){
                     // contact menu

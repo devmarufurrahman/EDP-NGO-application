@@ -16,9 +16,13 @@
         android:theme="@style/Theme.EDPNGO"
         tools:targetApi="31">
         <activity
-            android:name=".DirectorDetails"
+            android:name=".AboutUs"
             android:parentActivityName=".MainActivity"
             android:exported="false" />
+        <activity
+            android:name=".DirectorDetails"
+            android:exported="false"
+            android:parentActivityName=".AboutUs" />
         <activity
             android:name=".ProjectDetails"
             android:exported="false"
