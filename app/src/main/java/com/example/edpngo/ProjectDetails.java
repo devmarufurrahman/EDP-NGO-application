@@ -8,11 +8,14 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.google.android.material.imageview.ShapeableImageView;
+
 public class ProjectDetails extends AppCompatActivity {
 
     String title, description;
     ImageView imgIv;
     TextView titleTv, descTv;
+    ShapeableImageView shapeableImageView;
     int image = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +24,7 @@ public class ProjectDetails extends AppCompatActivity {
         imgIv = findViewById(R.id.projectDetailImg);
         titleTv = findViewById(R.id.projectDetailTitle);
         descTv = findViewById(R.id.projectDetailDesc);
+        shapeableImageView = findViewById(R.id.courseEnrollImg);
 
         // Toolbar
 
@@ -39,6 +43,8 @@ public class ProjectDetails extends AppCompatActivity {
         imgIv.setImageResource(image);
         titleTv.setText(title);
         descTv.setText(description);
+
+        shapeableImageView.setImageResource(image);
 
     }
 }
