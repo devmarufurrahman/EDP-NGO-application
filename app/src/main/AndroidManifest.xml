@@ -16,6 +16,9 @@
         android:theme="@style/Theme.EDPNGO"
         tools:targetApi="31">
         <activity
+            android:name=".EnrollForm"
+            android:exported="false" />
+        <activity
             android:name=".VolunteerJoinForm"
             android:exported="false" />
         <activity
@@ -26,13 +29,13 @@
             android:exported="false" />
         <activity
             android:name=".ProjectDetails"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".DonatePaypal"
             android:exported="false" />
         <activity
             android:name=".ContactActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

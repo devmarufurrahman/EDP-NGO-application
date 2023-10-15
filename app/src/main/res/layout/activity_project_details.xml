@@ -131,6 +131,7 @@
                                     android:textSize="11sp"/>
 
                                 <Button
+                                    android:id="@+id/enrollBtn1"
                                     android:fontFamily="@font/font_family"
                                     android:layout_width="wrap_content"
                                     android:layout_height="30dp"
@@ -217,6 +218,7 @@
                                     android:textSize="11sp"/>
 
                                 <Button
+                                    android:id="@+id/enrollBtn2"
                                     android:fontFamily="@font/font_family"
                                     android:layout_width="wrap_content"
                                     android:layout_height="30dp"
@@ -303,6 +305,7 @@
                                     android:textSize="11sp"/>
 
                                 <Button
+                                    android:id="@+id/enrollBtn3"
                                     android:fontFamily="@font/font_family"
                                     android:layout_width="wrap_content"
                                     android:layout_height="30dp"
