@@ -9,7 +9,7 @@
     tools:context=".SplashScreen">
 
     <ImageView
-        android:layout_width="200dp"
+        android:layout_width="230dp"
         android:layout_height="wrap_content"
         android:src="@drawable/edp_logo"
         />
@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:text="DOANTE EDP NGO"
+        android:text="Your Concern Our Time"
         />
 
 

@@ -84,7 +84,7 @@
                             android:fontFamily="@font/font_family"
                             android:padding="0dp"
                             android:textSize="12sp"
-                            android:layout_marginEnd="5dp"
+                            android:layout_marginEnd="3dp"
                             />
 
                     </LinearLayout>
@@ -483,6 +483,53 @@
                     </LinearLayout>
 
                 </LinearLayout>
+
+            </LinearLayout>
+
+
+<!--            Donate Feature -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="7dp"
+                android:paddingBottom="7dp"
+                android:background="@drawable/donate_round_shape"
+                android:layout_marginVertical="10dp"
+                >
+                <TextView
+                    android:fontFamily="@font/font_family"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:text="Donate Us"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/textColor"
+                    android:layout_margin="10dp"
+                    />
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/give_love"
+                    android:layout_gravity="center"
+                    />
+
+
+                <Button
+                    android:id="@+id/donationDonateBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button_shape"
+                    android:fontFamily="@font/font_family"
+                    android:text="@string/donate"
+                    app:backgroundTint="@color/orangeDark"
+                    android:layout_marginBottom="7dp"
+                    />
+
 
             </LinearLayout>
 
