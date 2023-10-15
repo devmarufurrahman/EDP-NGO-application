@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
+import android.view.View;
 
 public class DonatePaypal extends AppCompatActivity {
 Toolbar toolbar;
@@ -15,5 +16,11 @@ Toolbar toolbar;
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Donate Paypal");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
     }
 }

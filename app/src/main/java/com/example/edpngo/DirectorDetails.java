@@ -5,6 +5,7 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 public class DirectorDetails extends AppCompatActivity {
@@ -32,6 +33,13 @@ public class DirectorDetails extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle(appbarName);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
 
 
         // set intent

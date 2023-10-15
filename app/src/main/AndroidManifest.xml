@@ -20,24 +20,19 @@
             android:exported="false" />
         <activity
             android:name=".Notification"
-            android:exported="false"
-            android:parentActivityName=".MainActivity" />
+            android:exported="false" />
         <activity
             android:name=".DirectorDetails"
-            android:exported="false"
-            android:parentActivityName=".AboutUs" />
+            android:exported="false" />
         <activity
             android:name=".ProjectDetails"
-            android:exported="false"
-            android:parentActivityName=".MainActivity" />
+            android:exported="false"/>
         <activity
             android:name=".DonatePaypal"
-            android:exported="false"
-            android:parentActivityName=".MainActivity" />
+            android:exported="false" />
         <activity
             android:name=".ContactActivity"
-            android:exported="false"
-            android:parentActivityName=".MainActivity" />
+            android:exported="false"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">

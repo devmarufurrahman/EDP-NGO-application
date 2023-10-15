@@ -30,6 +30,15 @@ public class Notification extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Notifications");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
+
+
+        // notification view
 
         int[] imgList = {R.drawable.avatar_image, R.drawable.avatar_image, R.drawable.avatar_image} ;
         String[] title = {getString(R.string.esl_english),getString(R.string.home_health_aide),getString(R.string.computer_courses),} ;
