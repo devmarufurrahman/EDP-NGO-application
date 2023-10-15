@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     ActionBarDrawerToggle toggle;
-    ImageView imageMenu, logoEdp;
+    ImageView imageMenu, logoEdp, notificationIcon;
 
     BottomNavigationView bottomNavigationView;
 
@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         logoEdp = findViewById(R.id.logoEdp);
+        notificationIcon = findViewById(R.id.notificationIcon);
 
 
 //        logo click to home
@@ -49,6 +50,18 @@ public class MainActivity extends AppCompatActivity {
                 openFragment(new HomeFragment());
             }
         });
+
+
+        // notification icon activity
+        notificationIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,Notification.class);
+                startActivity(intent);
+            }
+        });
+
+
 
         // Bottom Navigation view start ===========================
         bottomNavigationView = findViewById(R.id.bottomNavigation);
