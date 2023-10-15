@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".VolunteerJoinForm">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/volunteerFormToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/appBarColor"
+        android:elevation="4dp"
+        android:layout_marginBottom="3dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="25dp"
+            >
+
+            <TextView
+                android:fontFamily="@font/font_family"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Volunteer Form"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="@color/textColor"
+                android:textStyle="bold"
+                android:padding="5dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="3dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Full name"
+                        android:textSize="14sp"
+                        android:layout_marginHorizontal="3dp"
+                        />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:minHeight="48dp"
+                        android:background="@drawable/edit_shape"
+                        android:inputType="text"
+                        android:elevation="1dp"
+                        android:layout_marginHorizontal="3dp"
+                        android:drawableStart="@drawable/person_icon"
+                        android:drawableTint="@color/orangeDark"
+                        />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="3dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email"
+                        android:textSize="14sp"
+                        android:layout_marginHorizontal="3dp"
+                        />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:minHeight="48dp"
+                        android:background="@drawable/edit_shape"
+                        android:inputType="text"
+                        android:elevation="1dp"
+                        android:layout_marginHorizontal="3dp"
+                        android:drawableStart="@drawable/email_icon"
+                        />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="3dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Phone"
+                        android:textSize="14sp"
+                        android:layout_marginHorizontal="3dp"
+                        />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:minHeight="48dp"
+                        android:background="@drawable/edit_shape"
+                        android:inputType="text"
+                        android:elevation="1dp"
+                        android:layout_marginHorizontal="3dp"
+                        android:drawableStart="@drawable/phone_icon"
+                        />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="3dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Address"
+                        android:textSize="14sp"
+                        android:layout_marginHorizontal="3dp"
+                        />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:minHeight="48dp"
+                        android:background="@drawable/edit_shape"
+                        android:inputType="text"
+                        android:elevation="1dp"
+                        android:layout_marginHorizontal="3dp"
+                        android:drawableStart="@drawable/location_icon"
+                        android:drawableTint="@color/orangeDark"
+                        />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="3dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nationality"
+                        android:textSize="14sp"
+                        android:layout_marginHorizontal="3dp"
+                        />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:minHeight="48dp"
+                        android:background="@drawable/edit_shape"
+                        android:inputType="text"
+                        android:elevation="1dp"
+                        android:layout_marginHorizontal="3dp"
+                        android:drawableStart="@drawable/person_icon"
+                        android:drawableTint="@color/orangeDark"
+                        />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="3dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NID"
+                        android:textSize="14sp"
+                        android:layout_marginHorizontal="3dp"
+                        />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:minHeight="48dp"
+                        android:background="@drawable/edit_shape"
+                        android:inputType="text"
+                        android:elevation="1dp"
+                        android:layout_marginHorizontal="3dp"
+                        android:drawableStart="@drawable/person_icon"
+                        android:drawableTint="@color/orangeDark"
+                        />
+
+                </LinearLayout>
+
+                <Button
+                    android:fontFamily="@font/font_family"
+                    android:id="@+id/volunteerJoinBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Submit"
+                    android:textSize="13sp"
+                    app:backgroundTint="@color/orangeDark"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="15dp"
+                    android:background="@drawable/button_shape"
+                    android:layout_marginVertical="11dp"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

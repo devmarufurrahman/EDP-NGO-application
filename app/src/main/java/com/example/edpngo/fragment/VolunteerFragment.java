@@ -11,9 +11,11 @@ import androidx.fragment.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.edpngo.R;
+import com.example.edpngo.VolunteerJoinForm;
 
 import java.util.ArrayList;
 
@@ -23,6 +25,7 @@ public class VolunteerFragment extends Fragment {
     ArrayList<CardView> volunteerId = new ArrayList<>();
     CardView volunteerProfile1,volunteerProfile2,volunteerProfile3,volunteerProfile4,volunteerProfile5,volunteerProfile6;
     TextView volunteerName;
+    Button volunteerJoinBtn;
 
     public VolunteerFragment() {
         // Required empty public constructor
@@ -42,8 +45,20 @@ public class VolunteerFragment extends Fragment {
         volunteerId.add(volunteerProfile5 = view.findViewById(R.id.volunteerProfile5));
         volunteerId.add(volunteerProfile6 = view.findViewById(R.id.volunteerProfile6));
         volunteerName = view.findViewById(R.id.volunteerName);
-        String name = volunteerName.getText().toString();
+        volunteerJoinBtn = view.findViewById(R.id.volunteerJoinBtn);
 
+        // join us button form
+        volunteerJoinBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), VolunteerJoinForm.class);
+                startActivity(intent);
+            }
+        });
+
+
+        // volunteer profile view
+        String name = volunteerName.getText().toString();
         for (int i = 0; i<volunteerId.size(); i++){
             if (volunteerId.get(i).equals(volunteerProfile1)) {
                 intentLoad(name,"01757000000","volunteer@gmail.com","Goals",volunteerProfile1);
