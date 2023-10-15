@@ -27,8 +27,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Make Donation To EDP NGO"
-                    android:textColor="@color/black"
-                    android:textSize="18sp"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp"
                     android:textStyle="bold"
                     />
 
@@ -66,8 +66,7 @@
                         <ImageView
                             android:layout_width="30dp"
                             android:layout_height="30dp"
-                            android:src="@drawable/baseline_account_balance_24"
-                            app:tint="@color/orangeLight"
+                            android:src="@drawable/donation_icon"
                             android:layout_weight="1"
                             />
 
@@ -84,9 +83,9 @@
                                 android:fontFamily="@font/font_family"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:textSize="19sp"
+                                android:textSize="16sp"
                                 android:textStyle="bold"
-                                android:textColor="@color/black"
+                                android:textColor="@color/textColor"
                                 android:text="0.00"
                                 />
 
@@ -95,8 +94,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Donations"
-                                android:textColor="@color/black"
-                                android:textStyle="bold"
+                                android:textColor="@color/textColor"
                                 android:textSize="14sp"
                                 />
                         </LinearLayout>
@@ -121,8 +119,7 @@
                         <ImageView
                             android:layout_width="30dp"
                             android:layout_height="30dp"
-                            android:src="@drawable/person_icon"
-                            app:tint="@color/orangeLight"
+                            android:src="@drawable/donors_icon"
                             android:layout_weight="1"
                             />
 
@@ -139,9 +136,9 @@
                                 android:fontFamily="@font/font_family"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:textSize="19sp"
+                                android:textSize="16sp"
                                 android:textStyle="bold"
-                                android:textColor="@color/black"
+                                android:textColor="@color/textColor"
                                 android:text="0.00"
                                 />
 
@@ -150,8 +147,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Donors"
-                                android:textColor="@color/black"
-                                android:textStyle="bold"
+                                android:textColor="@color/textColor"
                                 android:textSize="14sp"
                                 />
                         </LinearLayout>
@@ -171,30 +167,45 @@
 
 
 <!--                Recent Donors-->
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:padding="5dp"
                     android:gravity="center_vertical"
                     >
 
-                    <ImageView
+                    <com.google.android.material.imageview.ShapeableImageView
                         android:layout_width="30dp"
                         android:layout_height="30dp"
-                        android:src="@drawable/person_pin_icon"
+                        android:padding="4dp"
+                        app:shapeAppearance="@style/RoundFullImage"
+                        android:src="@drawable/avatar_image"
+                        app:strokeColor="@color/gray"
+                        app:strokeWidth="2dp"
+                        android:scaleType="fitCenter"
                         />
 
-                    <ImageView
+                    <com.google.android.material.imageview.ShapeableImageView
                         android:layout_width="30dp"
                         android:layout_height="30dp"
-                        android:src="@drawable/person_pin_icon"
+                        android:padding="4dp"
+                        app:shapeAppearance="@style/RoundFullImage"
+                        android:src="@drawable/avatar_image"
+                        app:strokeColor="@color/gray"
+                        app:strokeWidth="2dp"
+                        android:scaleType="fitCenter"
                         />
 
-                    <ImageView
+                    <com.google.android.material.imageview.ShapeableImageView
                         android:layout_width="30dp"
                         android:layout_height="30dp"
-                        android:src="@drawable/person_pin_icon"
+                        android:padding="4dp"
+                        app:shapeAppearance="@style/RoundFullImage"
+                        android:src="@drawable/avatar_image"
+                        app:strokeColor="@color/gray"
+                        app:strokeWidth="2dp"
+                        android:scaleType="fitCenter"
                         />
 
                     <TextView
@@ -203,7 +214,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="4dp"
                         android:text="+7 Donated"
-                        android:textStyle="bold"
+                        android:textColor="@color/textColor"
                         />
 
                 </LinearLayout>
@@ -215,21 +226,21 @@
                     android:layout_height="wrap_content"
                     android:text="@string/thank_you_for_making_a_donation"
                     android:textStyle="normal"
-                    android:textSize="18sp"
+                    android:textColor="@color/textColor"
+                    android:textSize="14sp"
                     android:layout_marginVertical="10dp"
                     />
 
                 <Button
-                    android:fontFamily="@font/font_family"
                     android:id="@+id/donationDonateBtn"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/donate"
+                    android:layout_height="40dp"
                     android:layout_marginHorizontal="20dp"
                     android:layout_marginTop="20dp"
                     android:background="@drawable/button_shape"
-                    app:backgroundTint="@color/orangeDark"
-                    />
+                    android:fontFamily="@font/font_family"
+                    android:text="@string/donate"
+                    app:backgroundTint="@color/orangeDark" />
 
             </LinearLayout>
 
