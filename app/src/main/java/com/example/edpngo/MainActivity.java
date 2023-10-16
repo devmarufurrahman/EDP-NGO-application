@@ -17,7 +17,9 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.edpngo.fragment.About;
+import com.example.edpngo.fragment.BlogFragment;
 import com.example.edpngo.fragment.DonateFragment;
+import com.example.edpngo.fragment.DonorsFragment;
 import com.example.edpngo.fragment.HomeFragment;
 import com.example.edpngo.fragment.ProfileFragment;
 import com.example.edpngo.fragment.ProjectFragment;
@@ -91,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
         // Bottom Navigation view end ===========================
 
 
-        // Navagation Drawar------------------------------
+        // Navigation Drawer------------------------------
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.nav_View);
         imageMenu = findViewById(R.id.imageMenu);
@@ -121,6 +123,10 @@ public class MainActivity extends AppCompatActivity {
                     // volunteer menu
                     openFragment(new VolunteerFragment());
 
+                } else if(id == R.id.navDonors){
+                    // volunteer menu
+                    openFragment(new DonorsFragment());
+
                 }else if(id == R.id.navAbout){
                     // about menu
                     openFragment(new About());
@@ -129,6 +135,22 @@ public class MainActivity extends AppCompatActivity {
                     // contact menu
                     Intent intent = new Intent(MainActivity.this,ContactActivity.class);
                     startActivity(intent);
+
+                }  else if(id == R.id.navBlogs){
+                    // Our blogs menu
+                    openFragment(new BlogFragment());
+
+                }   else if(id == R.id.navDonate){
+                    // donate menu
+                    openFragment(new DonateFragment());
+
+                }  else if(id == R.id.navProjects){
+                    // Projects menu
+                    openFragment(new ProjectFragment());
+
+                } else if(id == R.id.navGallery){
+                    // Projects menu
+                    Toast.makeText(MainActivity.this, "Gallery", Toast.LENGTH_SHORT).show();
 
                 } else {
                     // logout
