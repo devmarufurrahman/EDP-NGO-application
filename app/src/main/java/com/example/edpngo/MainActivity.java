@@ -11,9 +11,11 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.example.edpngo.fragment.About;
@@ -36,6 +38,9 @@ public class MainActivity extends AppCompatActivity {
     ImageView imageMenu, logoEdp, notificationIcon;
 
     BottomNavigationView bottomNavigationView;
+    String ROOT_FRAGMENT_TAG;
+    ProgressBar frameLoading;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,13 +48,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         logoEdp = findViewById(R.id.logoEdp);
         notificationIcon = findViewById(R.id.notificationIcon);
+        frameLoading = findViewById(R.id.fragmentContainerLoading);
+        frameLoading.setVisibility(View.VISIBLE);
 
 
 //        logo click to home
         logoEdp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openFragment(new HomeFragment());
+                openFragment(new HomeFragment(),0);
             }
         });
 
@@ -73,13 +80,17 @@ public class MainActivity extends AppCompatActivity {
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                frameLoading.setVisibility(View.VISIBLE);
+
                 int id = item.getItemId();
                 if (id == R.id.navHome){
-                    openFragment(new HomeFragment());
+
+                    openFragment(new HomeFragment(),R.id.navHome);
+
                 } else if (id == R.id.navDonate) {
-                    openFragment(new DonateFragment());
+                    openFragment(new DonateFragment(), R.id.navDonate);
                 } else if (id == R.id.navProject) {
-                    openFragment(new ProjectFragment());
+                    openFragment(new ProjectFragment(), R.id.navProject);
                 } else {
                     Toast.makeText(MainActivity.this, "Gallery", Toast.LENGTH_SHORT).show();
                 }
@@ -88,7 +99,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        openFragment(new HomeFragment());
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                openFragment(new HomeFragment(),0);
+                frameLoading.setVisibility(View.GONE);
+            }
+        },1000);
+
+
 
         // Bottom Navigation view end ===========================
 
@@ -117,19 +136,19 @@ public class MainActivity extends AppCompatActivity {
                 if (id == R.id.navProfile){
                     // profile menu
 
-                    openFragment(new ProfileFragment());
+                    openFragment(new ProfileFragment(), R.id.navProfile);
 
                 } else if(id == R.id.navVolunteer){
                     // volunteer menu
-                    openFragment(new VolunteerFragment());
+                    openFragment(new VolunteerFragment(), R.id.navVolunteer);
 
                 } else if(id == R.id.navDonors){
                     // volunteer menu
-                    openFragment(new DonorsFragment());
+                    openFragment(new DonorsFragment(), R.id.navDonors);
 
                 }else if(id == R.id.navAbout){
                     // about menu
-                    openFragment(new About());
+                    openFragment(new About(), R.id.navAbout);
 
                 } else if(id == R.id.navContact){
                     // contact menu
@@ -138,15 +157,15 @@ public class MainActivity extends AppCompatActivity {
 
                 }  else if(id == R.id.navBlogs){
                     // Our blogs menu
-                    openFragment(new BlogFragment());
+                    openFragment(new BlogFragment(), R.id.navBlogs);
 
                 }   else if(id == R.id.navDonate){
                     // donate menu
-                    openFragment(new DonateFragment());
+                    openFragment(new DonateFragment(), R.id.navDonate);
 
                 }  else if(id == R.id.navProjects){
                     // Projects menu
-                    openFragment(new ProjectFragment());
+                    openFragment(new ProjectFragment(), R.id.navProjects);
 
                 } else if(id == R.id.navGallery){
                     // Projects menu
@@ -180,10 +199,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    private void openFragment(Fragment fragment){
+    private void openFragment(Fragment fragment, int id){
+        frameLoading.setVisibility(View.VISIBLE);
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.fragmentContainer,fragment);
+        if (id == R.id.navHome){
+           fragmentTransaction.replace(R.id.fragmentContainer,new HomeFragment());
+           fragmentManager.popBackStack(ROOT_FRAGMENT_TAG,FragmentManager.POP_BACK_STACK_INCLUSIVE);
+           fragmentTransaction.addToBackStack(ROOT_FRAGMENT_TAG);
+        }
+        fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
+
     }
 }

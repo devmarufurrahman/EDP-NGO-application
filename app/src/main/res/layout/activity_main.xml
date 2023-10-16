@@ -72,7 +72,19 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/fragmentContainer"
-            />
+            >
+
+            <ProgressBar
+                android:id="@+id/fragmentContainerLoading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:indeterminateTint="@color/orangeDark"
+
+                android:visibility="gone" />
+        </FrameLayout>
+
 
         <LinearLayout
             android:id="@+id/bottomLinear"
