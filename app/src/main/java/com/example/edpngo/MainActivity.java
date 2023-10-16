@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                frameLoading.setVisibility(View.VISIBLE);
+                
 
                 int id = item.getItemId();
                 if (id == R.id.navHome){
@@ -200,7 +200,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void openFragment(Fragment fragment, int id){
-        frameLoading.setVisibility(View.VISIBLE);
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.fragmentContainer,fragment);

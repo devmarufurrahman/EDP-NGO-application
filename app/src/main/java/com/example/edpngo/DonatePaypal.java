@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
 
+import android.annotation.SuppressLint;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
@@ -12,7 +13,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class DonatePaypal extends AppCompatActivity {
+public class DonatePaypal extends AppCompatActivity implements View.OnClickListener {
 Toolbar toolbar;
 CardView donateDollarCard1, donateDollarCard2, donateDollarCard3, donateDollarCard4;
 TextView usd100, usd500, usd1000, usdOthers;
@@ -31,6 +32,11 @@ ArrayList<CardView> cardList = new ArrayList<>();
         usdOthers = findViewById(R.id.usdOthers);
 
 
+        donateDollarCard1.setOnClickListener(this);
+        donateDollarCard2.setOnClickListener(this);
+        donateDollarCard3.setOnClickListener(this);
+        donateDollarCard4.setOnClickListener(this);
+
 
         //toolbar
         toolbar = findViewById(R.id.donatePaypalToolbar);
@@ -47,31 +53,46 @@ ArrayList<CardView> cardList = new ArrayList<>();
 
 
         // Card clickable
-        for (int i = 0; i< cardList.size(); i++) {
-            if (cardList.get(i).equals(donateDollarCard1)) {
-                cardClick(donateDollarCard1, usd100);
-            } else if (cardList.get(i).equals(donateDollarCard2)) {
-                cardClick(donateDollarCard2, usd500);
-            } else if (cardList.get(i).equals(donateDollarCard3)) {
-                cardClick(donateDollarCard3, usd1000);
-            } else {
-                cardClick(donateDollarCard4, usdOthers);
-            }
-
-        }
+//        for (int i = 0; i< cardList.size(); i++) {
+//            if (cardList.get(i).equals(donateDollarCard1)) {
+//                cardClick(donateDollarCard1, usd100);
+//            } else if (cardList.get(i).equals(donateDollarCard2)) {
+//                cardClick(donateDollarCard2, usd500);
+//            } else if (cardList.get(i).equals(donateDollarCard3)) {
+//                cardClick(donateDollarCard3, usd1000);
+//            } else {
+//                cardClick(donateDollarCard4, usdOthers);
+//            }
+//
+//
+//
+//        }
 
     }
 
     private void cardClick( CardView cardView, TextView textView){
-        cardView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                     cardView.setCardBackgroundColor(getColor(R.color.paypalColor));
                     textView.setTextColor(getColor(R.color.white));
                 }
 
-            }
-        });
     }
+
+    @Override
+    public void onClick(View v) {
+        int id = v.getId();
+        if (id == R.id.donateDollarCard1){
+            cardClick(donateDollarCard1, usd100);
+
+        } else if (id == R.id.donateDollarCard2) {
+            cardClick(donateDollarCard2, usd500);
+        } else if (id == R.id.donateDollarCard3) {
+            cardClick(donateDollarCard3, usd1000);
+        } else {
+            cardClick(donateDollarCard4, usdOthers);
+        }
+
+    }
+
 }
