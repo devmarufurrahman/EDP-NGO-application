@@ -26,6 +26,29 @@
         />
 
     <item
+        android:id="@+id/navBlogs"
+        android:title="Our Blogs"
+        android:icon="@drawable/blog_icon"
+        />
+
+    <item
+        android:id="@+id/navDonate"
+        android:title="Donate"
+        android:icon="@drawable/donation_icon"
+        />
+
+    <item
+        android:id="@+id/navProjects"
+        android:title="Projects"
+        android:icon="@drawable/projects_icon"
+        />
+    <item
+        android:id="@+id/navGallery"
+        android:title="Photo Gallery"
+        android:icon="@drawable/galllery_icon"
+        />
+
+    <item
         android:id="@+id/navLogout"
         android:title="Logout"
         android:icon="@drawable/logout_icon"
