@@ -23,6 +23,10 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            renderscriptOptimLevel = 3
+        }
+        getByName("debug") {
+            isJniDebuggable = false
         }
     }
     compileOptions {
