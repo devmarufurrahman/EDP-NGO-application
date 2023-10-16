@@ -336,6 +336,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/projectsActivityLayout"
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:layout_height="80dp"
@@ -399,6 +400,7 @@
                     android:weightSum="3"
                     >
                     <LinearLayout
+                        android:id="@+id/blogsActivityLayout"
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:layout_height="80dp"

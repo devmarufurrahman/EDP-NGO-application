@@ -24,7 +24,7 @@ public class HomeFragment extends Fragment {
 
     TextView seeAllTv;
     Button featureBtn1, featureBtn2, featureBtn3, eventBtn1, eventBtn2, eventBtn3, viewProfile;
-    LinearLayout donateLayout, aboutLayout, contactLayout;
+    LinearLayout donateLayout, aboutLayout, contactLayout, projectsLayout, blogsLayout;
     public HomeFragment() {
         // Required empty public constructor
     }
@@ -41,6 +41,8 @@ public class HomeFragment extends Fragment {
         donateLayout = view.findViewById(R.id.donateActivityLayout);
         aboutLayout = view.findViewById(R.id.aboutActivityLayout);
         contactLayout = view.findViewById(R.id.contactActivityLayout);
+        projectsLayout = view.findViewById(R.id.projectsActivityLayout);
+        blogsLayout = view.findViewById(R.id.blogsActivityLayout);
         eventBtn1 = view.findViewById(R.id.eventBtn1);
         eventBtn2 = view.findViewById(R.id.eventBtn2);
         eventBtn3 = view.findViewById(R.id.eventBtn3);
@@ -122,7 +124,7 @@ public class HomeFragment extends Fragment {
         });
 
 
-        // donate layout activity
+        // contact layout activity
         contactLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -139,6 +141,33 @@ public class HomeFragment extends Fragment {
                 FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 fragmentTransaction.replace(R.id.fragmentContainer, new About());
+                fragmentTransaction.commit();
+            }
+
+        });
+
+
+        // projects layout activity
+        projectsLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.fragmentContainer, new ProjectFragment());
+                fragmentTransaction.commit();
+            }
+
+        });
+
+
+
+        // projects layout activity
+        blogsLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.fragmentContainer, new BlogFragment());
                 fragmentTransaction.commit();
             }
 
