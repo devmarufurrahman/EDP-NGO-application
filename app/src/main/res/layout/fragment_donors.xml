@@ -43,7 +43,7 @@
 
             <Button
                 android:fontFamily="@font/font_family"
-                android:id="@+id/volunteerJoinBtn"
+                android:id="@+id/donorsDonateBtn"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:text="@string/donate"

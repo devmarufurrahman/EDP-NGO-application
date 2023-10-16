@@ -36,7 +36,7 @@ public class DonorsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_volunteer, container, false);
+        View view = inflater.inflate(R.layout.fragment_donors, container, false);
         volunteerId.add(volunteerProfile1 = view.findViewById(R.id.volunteerProfile1));
         volunteerId.add( volunteerProfile2 = view.findViewById(R.id.volunteerProfile2));
         volunteerId.add(volunteerProfile3 = view.findViewById(R.id.volunteerProfile3));
@@ -44,7 +44,7 @@ public class DonorsFragment extends Fragment {
         volunteerId.add(volunteerProfile5 = view.findViewById(R.id.volunteerProfile5));
         volunteerId.add(volunteerProfile6 = view.findViewById(R.id.volunteerProfile6));
         volunteerName = view.findViewById(R.id.volunteerName);
-        volunteerJoinBtn = view.findViewById(R.id.volunteerJoinBtn);
+        volunteerJoinBtn = view.findViewById(R.id.donorsDonateBtn);
 
         // join us button form
         volunteerJoinBtn.setOnClickListener(new View.OnClickListener() {
