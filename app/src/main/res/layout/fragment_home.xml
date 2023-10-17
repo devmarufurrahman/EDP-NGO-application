@@ -58,7 +58,7 @@
                             android:fontFamily="@font/font_family"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Mr. XXX"
+                            android:text="@string/mr_saddam_hossen"
                             android:textStyle="bold"
                             android:textColor="@color/black"
                             android:textSize="14sp"
