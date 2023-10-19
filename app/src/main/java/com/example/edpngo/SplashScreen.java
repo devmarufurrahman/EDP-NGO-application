@@ -13,7 +13,7 @@ public class SplashScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
 
-        Intent iHome = new Intent(SplashScreen.this,MainActivity.class);
+        Intent iHome = new Intent(SplashScreen.this,Walkthough1.class);
 
         // splash screen delay
         new Handler().postDelayed(new Runnable() {
