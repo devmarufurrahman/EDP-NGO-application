@@ -8,23 +8,23 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class Walkthough1 extends AppCompatActivity {
+public class Walkthough3 extends AppCompatActivity {
 
-    TextView skipWalk;
-    ImageView nextWalk1;
+    TextView skipWalk3;
+    ImageView nextWalk3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_walkthough1);
-        skipWalk = findViewById(R.id.skipWalkThough);
-        nextWalk1 = findViewById(R.id.nextWalkThough1);
+        setContentView(R.layout.activity_walkthough3);
+        skipWalk3 = findViewById(R.id.skipWalkThough3);
+        nextWalk3 = findViewById(R.id.nextWalkThough3);
 
 
         // skip walk though
-        skipWalk.setOnClickListener(new View.OnClickListener() {
+        skipWalk3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Walkthough1.this,MainActivity.class);
+                Intent intent = new Intent(Walkthough3.this,MainActivity.class);
                 startActivity(intent);
                 finish();
             }
@@ -33,10 +33,10 @@ public class Walkthough1 extends AppCompatActivity {
 
 
         // next walk though
-        nextWalk1.setOnClickListener(new View.OnClickListener() {
+        nextWalk3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Walkthough1.this, Walkthough2.class);
+                Intent intent = new Intent(Walkthough3.this, MainActivity.class);
                 startActivity(intent);
                 finish();
             }

@@ -16,6 +16,12 @@
         android:theme="@style/Theme.EDPNGO"
         tools:targetApi="31">
         <activity
+            android:name=".Walkthough3"
+            android:exported="false" />
+        <activity
+            android:name=".Walkthough2"
+            android:exported="false" />
+        <activity
             android:name=".Walkthough1"
             android:exported="false" />
         <activity
