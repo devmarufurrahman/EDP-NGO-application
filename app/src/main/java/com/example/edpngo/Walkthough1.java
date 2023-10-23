@@ -3,6 +3,7 @@ package com.example.edpngo;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -27,6 +28,7 @@ public class Walkthough1 extends AppCompatActivity {
                 Intent intent = new Intent(Walkthough1.this,MainActivity.class);
                 startActivity(intent);
                 finish();
+                setUserRecord();
             }
         });
 
@@ -39,8 +41,16 @@ public class Walkthough1 extends AppCompatActivity {
                 Intent intent = new Intent(Walkthough1.this, Walkthough2.class);
                 startActivity(intent);
                 finish();
+                setUserRecord();
             }
         });
 
+    }
+
+    private void setUserRecord() {
+        SharedPreferences preferences = getSharedPreferences("EDPNewUser", MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putString("isNewUser","oldUser");
+        editor.apply();
     }
 }
