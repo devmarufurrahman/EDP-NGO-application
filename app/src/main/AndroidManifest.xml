@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
 
     <application
         android:allowBackup="true"
@@ -15,6 +16,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EDPNGO"
         tools:targetApi="31">
+        <activity
+            android:name=".FullImageView"
+            android:exported="false" />
         <activity
             android:name=".Walkthough3"
             android:exported="false" />

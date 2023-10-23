@@ -22,6 +22,7 @@ import com.example.edpngo.fragment.About;
 import com.example.edpngo.fragment.BlogFragment;
 import com.example.edpngo.fragment.DonateFragment;
 import com.example.edpngo.fragment.DonorsFragment;
+import com.example.edpngo.fragment.GalleryFragment;
 import com.example.edpngo.fragment.HomeFragment;
 import com.example.edpngo.fragment.ProfileFragment;
 import com.example.edpngo.fragment.ProjectFragment;
@@ -92,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
                 } else if (id == R.id.navProject) {
                     openFragment(new ProjectFragment(), R.id.navProject);
                 } else {
-                    Toast.makeText(MainActivity.this, "Gallery", Toast.LENGTH_SHORT).show();
+                    openFragment(new GalleryFragment(),R.id.navGallery);
                 }
 
                 return true;
@@ -169,7 +170,7 @@ public class MainActivity extends AppCompatActivity {
 
                 } else if(id == R.id.navGallery){
                     // Projects menu
-                    Toast.makeText(MainActivity.this, "Gallery", Toast.LENGTH_SHORT).show();
+                    openFragment(new GalleryFragment(),R.id.navGallery);
 
                 } else {
                     // logout
