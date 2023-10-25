@@ -17,6 +17,15 @@
         android:theme="@style/Theme.EDPNGO"
         tools:targetApi="31">
         <activity
+            android:name=".LginUserInfo"
+            android:exported="false" />
+        <activity
+            android:name=".LoginOtp"
+            android:exported="false" />
+        <activity
+            android:name=".adapter.LoginPhone"
+            android:exported="false" />
+        <activity
             android:name=".FullImageView"
             android:exported="false" />
         <activity

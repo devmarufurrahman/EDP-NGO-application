@@ -38,10 +38,11 @@ public class Walkthough1 extends AppCompatActivity {
         nextWalk1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                setUserRecord();
                 Intent intent = new Intent(Walkthough1.this, Walkthough2.class);
                 startActivity(intent);
                 finish();
-                setUserRecord();
+
             }
         });
 
