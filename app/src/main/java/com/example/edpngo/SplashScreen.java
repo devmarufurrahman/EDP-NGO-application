@@ -30,11 +30,11 @@ public class SplashScreen extends AppCompatActivity {
                 if (isNewUser.equals("oldUser")){
                     startActivity(iHome);
                     finish();
-                    Toast.makeText(SplashScreen.this, isNewUser, Toast.LENGTH_SHORT).show();
+
                 } else if(isNewUser.equals("")){
                     startActivity(walkThough);
                     finish();
-                    Toast.makeText(SplashScreen.this, isNewUser, Toast.LENGTH_SHORT).show();
+
                 }
 
             }
